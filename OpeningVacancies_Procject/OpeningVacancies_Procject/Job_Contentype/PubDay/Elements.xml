@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7526c5b3-e67b-48dc-a4e2-e07dd3728e4e}"
+       Name="PubDay"
+       DisplayName="Pub Day"
+       Type="DateTime"
+       Required="FALSE" 
+       Group="Job Site Columns">
+    <Default>[Today]</Default>
+  </Field>
+</Elements>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{136dd138-a309-43a2-9f26-09b2d2737d7b}"
+       Name="ReferralBonus"
+       DisplayName="Referral Bonus"
+       Type="Number"
+       Required="FALSE"
+       Group="Job Site Columns">
+    <Default><![CDATA[100]]>
+      <![CDATA[100]]>
+      <![CDATA[100]]>
+    </Default>
+  </Field>
+</Elements>

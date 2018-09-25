@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="31950810-8b3b-40db-9737-bb3fcffb98d8" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="OpeningVacancies_Procject.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="OpeningVacancies_Procject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=327e0065b8f75b45" Namespace="OpeningVacancies_Procject.OpeningVacancies_WP" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\OpeningVacancies_Procject\AppPages.aspx" />
+    <TemplateFile Location="ControlTemplates\OpeningVacancies_Procject\Control_All_Job.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="OpeningVacancies_Procject_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

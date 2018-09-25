@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{909a0361-03f7-4767-9e80-e1d37a323003}"
+       Name="ShortDescription"
+       DisplayName="Short Description"
+       Type="Text"
+       MaxLength="50"
+       Required="FALSE"
+       Group="Job Site Columns">
+    <Default>  <![CDATA[Codeer]]>
+      <![CDATA[Codeer]]>
+      <![CDATA[Codeer]]>
+    </Default>
+  </Field>
+</Elements>

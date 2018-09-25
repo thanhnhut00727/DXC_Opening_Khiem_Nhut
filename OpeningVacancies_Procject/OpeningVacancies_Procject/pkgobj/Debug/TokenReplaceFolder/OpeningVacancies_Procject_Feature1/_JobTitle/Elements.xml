@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2896a1bf-f6ea-4248-9175-82ca5e64038e}"
+       Name="_JobTitle"
+       DisplayName="_Job Title"
+       Type="Text"
+       MaxLength="20"
+       Required="FALSE"
+       Group="Job Site Columns">
+    <Default><![CDATA[Test]]></Default> 
+  </Field>
+</Elements>

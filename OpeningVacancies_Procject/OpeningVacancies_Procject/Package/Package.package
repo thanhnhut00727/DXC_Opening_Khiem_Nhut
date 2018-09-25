@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="31950810-8b3b-40db-9737-bb3fcffb98d8" solutionId="31950810-8b3b-40db-9737-bb3fcffb98d8" resetWebServer="false" sharePointProductVersion="15.0" name="OpeningVacancies_Procject" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="113c29bf-35d5-4755-af0b-5da300b52044" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="8b27a764-d3c9-4648-966b-cbd10fe06279" />
+    <projectItemReference itemId="44840473-009d-4d2e-9380-43312d2e8274" />
+  </projectItems>
+</package>

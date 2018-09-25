@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{007f22bd-31e4-46ac-92c7-05c64fb966ba}"
+       Name="HRContact"
+       DisplayName="HR Contact"
+       Type="Text"
+       Required="FALSE"
+       MaxLength="50"
+       Group="Job Site Columns">
+    <Default><![CDATA[TranHao]]></Default> 
+  </Field>
+</Elements>

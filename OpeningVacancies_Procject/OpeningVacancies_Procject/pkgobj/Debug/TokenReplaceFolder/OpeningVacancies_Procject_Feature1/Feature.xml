@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="80201c89-2b0f-47d7-956c-f0293edbc7d4" Scope="Site" Title="OpeningVacancies_Procject Feature1">
+  <ElementManifests>
+    <ElementManifest Location="Job_Contentype\Elements.xml" />
+    <ElementManifest Location="_JobListInstance\Elements.xml" />
+    <ElementManifest Location="_JobList\Elements.xml" />
+    <ElementFile Location="_JobList\Schema.xml" />
+    <ElementManifest Location="_JobTitle\Elements.xml" />
+    <ElementManifest Location="ShortDescription\Elements.xml" />
+    <ElementManifest Location="LongDescription\Elements.xml" />
+    <ElementManifest Location="ReferralBonus\Elements.xml" />
+    <ElementManifest Location="HRContact\Elements.xml" />
+    <ElementManifest Location="Status\Elements.xml" />
+    <ElementManifest Location="PubDay\Elements.xml" />
+    <ElementManifest Location="OpeningVacancies_WP\Elements.xml" />
+    <ElementFile Location="OpeningVacancies_WP\OpeningVacancies_WP.webpart" />
+  </ElementManifests>
+</Feature>

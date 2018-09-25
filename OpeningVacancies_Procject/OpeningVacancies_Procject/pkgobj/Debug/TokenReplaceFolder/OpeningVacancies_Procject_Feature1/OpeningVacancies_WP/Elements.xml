@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="OpeningVacancies_WP" List="113" Url="_catalogs/wp">
+    <File Path="OpeningVacancies_WP\OpeningVacancies_WP.webpart" Url="OpeningVacancies_Procject_OpeningVacancies_WP.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

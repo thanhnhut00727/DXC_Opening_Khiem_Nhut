@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100DE12F8224A9D496FACF7E8C2F43D39C0" Name="Job_Contentype" Group="Job Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{2896a1bf-f6ea-4248-9175-82ca5e64038e}" DisplayName="_Job Title" Required="FALSE" Name="_JobTitle" />
+      <FieldRef ID="{909a0361-03f7-4767-9e80-e1d37a323003}" DisplayName="Short Description" Required="FALSE" Name="ShortDescription" />
+      <FieldRef ID="{d3e0e839-d374-439b-8738-56358c7c3cd7}" DisplayName="Long Description" Required="FALSE" Name="LongDescription" />
+      <FieldRef ID="{007f22bd-31e4-46ac-92c7-05c64fb966ba}" DisplayName="HR Contact" Required="FALSE" Name="HRContact" />
+      <FieldRef ID="{136dd138-a309-43a2-9f26-09b2d2737d7b}" DisplayName="Referral Bonus" Required="FALSE" Name="ReferralBonus" />
+      <FieldRef ID="{7526c5b3-e67b-48dc-a4e2-e07dd3728e4e}" DisplayName="Pub Day" Required="FALSE" Name="PubDay" />
+      <FieldRef ID="{93361a3c-7c3d-4cd5-b2a7-be8c38ebfb23}" DisplayName="Status" Required="FALSE" Name="Status" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

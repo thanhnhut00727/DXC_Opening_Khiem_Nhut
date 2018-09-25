@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\Code\OpeningVacancies_Procject\OpeningVacancies_Procject\bin\Debug\OpeningVacancies_Procject.dll
+C:\Users\Administrator\Desktop\Code\OpeningVacancies_Procject\OpeningVacancies_Procject\bin\Debug\OpeningVacancies_Procject.pdb
+C:\Users\Administrator\Desktop\Code\OpeningVacancies_Procject\OpeningVacancies_Procject\obj\Debug\OpeningVacancies_Procject.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Code\OpeningVacancies_Procject\OpeningVacancies_Procject\obj\Debug\OpeningVacancies_Procject.dll
+C:\Users\Administrator\Desktop\Code\OpeningVacancies_Procject\OpeningVacancies_Procject\obj\Debug\OpeningVacancies_Procject.pdb
