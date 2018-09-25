@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{2051bbf4-774f-45b4-abbe-69404ccf6370}"
+       Name="PubDate"
+       DisplayName="Pub Date"
+       Type="DateTime"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <Default>[today]</Default>
+  </Field>
+</Elements>

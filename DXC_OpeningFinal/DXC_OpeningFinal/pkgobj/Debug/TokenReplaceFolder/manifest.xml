@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="7870a203-c34e-40c6-a059-b3e111320fb7" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="DXC_OpeningFinal.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="DXC_OpeningFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6ce3279edf1ab8cf" Namespace="DXC_OpeningFinal.OpeningWP" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\DXC_OpeningFinal\AddNewJob.aspx" />
+    <TemplateFile Location="Layouts\DXC_OpeningFinal\AllJobs.aspx" />
+    <TemplateFile Location="Layouts\DXC_OpeningFinal\JobDetail.aspx" />
+    <TemplateFile Location="Layouts\JScript\AddNewJob.js" />
+    <TemplateFile Location="Layouts\JScript\SSOM.js" />
+    <TemplateFile Location="Layouts\Style\CSS.css" />
+    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\AddNewJob.ascx" />
+    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\AllJob.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="DXC_OpeningFinal_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="9f8d513d-e1e3-4473-89cc-7fadf9f0843a" Scope="Site" Title="DXC_OpeningFinal Feature1">
+  <ElementManifests>
+    <ElementManifest Location="JobContentType\Elements.xml" />
+    <ElementManifest Location="_JobTitle\Elements.xml" />
+    <ElementManifest Location="ShortDescription\Elements.xml" />
+    <ElementManifest Location="LongDescription\Elements.xml" />
+    <ElementManifest Location="RefernalBonus\Elements.xml" />
+    <ElementManifest Location="HRContact\Elements.xml" />
+    <ElementManifest Location="Status\Elements.xml" />
+    <ElementManifest Location="PubDate\Elements.xml" />
+    <ElementManifest Location="JobListInstance\Elements.xml" />
+    <ElementManifest Location="JobList\Elements.xml" />
+    <ElementFile Location="JobList\Schema.xml" />
+    <ElementManifest Location="OpeningWP\Elements.xml" />
+    <ElementFile Location="OpeningWP\OpeningWP.webpart" />
+  </ElementManifests>
+</Feature>

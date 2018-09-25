@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="JobList" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/JobList" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="_JobTitle">Java Developers</Field>
+          <Field Name="ShortDescription">This is short description of Java Developers</Field>
+          <Field Name="LongDescription">
+            Experience in Java-Software-Development in a professional environment.
+            Extensive programming experience in Java, J2EE technologies (Servlets, EJB).
+            REST/SOAP Web Services
+          </Field>
+          <Field Name="RefernalBonus">1000</Field>
+          <Field Name="HRContact">Tran Thien Khien</Field>
+        </Row>
+        <Row>
+          <Field Name="_JobTitle">.NET Developers</Field>
+          <Field Name="ShortDescription">This is short description of .NET Developers</Field>
+          <Field Name="LongDescription">
+            Have good knowledge about OOP design patterns and architecture models.
+            Proven experience in ReactJS, .NET or NodeJS.
+            Have experience working with SQL, Redis.
+          </Field>
+          <Field Name="RefernalBonus">2500</Field>
+          <Field Name="HRContact">Tran Thanh Nhut</Field>
+        </Row>
+        <Row>
+          <Field Name="_JobTitle">PHP Developers</Field>
+          <Field Name="ShortDescription">This is short description of PHP Developers</Field>
+          <Field Name="LongDescription">
+            Have knowledge about OOP, design pattern.
+            have knowledge about Framework cakePHP, Zend, CodeIgniter. Basic level at HTML, CSS, JavaScript, jQuery.
+          </Field>
+          <Field Name="RefernalBonus">3000</Field>
+          <Field Name="HRContact">Dong Van Vy</Field>
+        </Row>
+        <Row>
+          <Field Name="_JobTitle">Python Developers</Field>
+          <Field Name="ShortDescription">This is short description of Python Developers</Field>
+          <Field Name="LongDescription">
+            Collaborate with Data team on defining data type, data source; implementing and continuously improving crawler with high accuracy result
+            Collaborate with Product team on successful delivery of product’s functions launch as a lean team (involving cross-country communication)
+          </Field>
+          <Field Name="RefernalBonus">6000</Field>
+          <Field Name="Status">Close</Field>
+          <Field Name="HRContact">Le Minh Tuan</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>
