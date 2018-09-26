@@ -8,13 +8,17 @@
     </Assembly>
   </Assemblies>
   <TemplateFiles>
+    <TemplateFile Location="Layouts\img\Thumbs.db" />
     <TemplateFile Location="Layouts\DXC_OpeningFinal\AddNewJob.aspx" />
     <TemplateFile Location="Layouts\DXC_OpeningFinal\AllJobs.aspx" />
     <TemplateFile Location="Layouts\DXC_OpeningFinal\JobDetail.aspx" />
+    <TemplateFile Location="Layouts\img\button_72.gif" />
+    <TemplateFile Location="Layouts\img\error.png" />
+    <TemplateFile Location="Layouts\img\error_small.png" />
     <TemplateFile Location="Layouts\JScript\AddNewJob.js" />
     <TemplateFile Location="Layouts\JScript\SSOM.js" />
     <TemplateFile Location="Layouts\Style\CSS.css" />
-    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\AddNewJob.ascx" />
+    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx" />
     <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\AllJob.ascx" />
   </TemplateFiles>
   <FeatureManifests>

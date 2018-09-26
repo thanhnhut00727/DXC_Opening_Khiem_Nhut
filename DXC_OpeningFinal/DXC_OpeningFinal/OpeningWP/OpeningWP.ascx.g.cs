@@ -115,7 +115,8 @@ namespace DXC_OpeningFinal.OpeningWP {
             this.LinkAllJob = @__ctrl;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "LinkAllJob";
-            @__ctrl.NavigateUrl = "http://win-ikp5n1jcalv:8888/_layouts/15/DXC_OpeningFinal/AllJobs.aspx";
+            @__ctrl.NavigateUrl = "http://win-ikp5n1jcalv:1111/sites/HomePages/_layouts/15/DXC_OpeningFinal/AllJobs." +
+                "aspx";
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("All Job Opportunities"));
             return @__ctrl;
@@ -130,7 +131,8 @@ namespace DXC_OpeningFinal.OpeningWP {
             this.LinkAddNew = @__ctrl;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "LinkAddNew";
-            @__ctrl.NavigateUrl = "http://win-ikp5n1jcalv:8888/_layouts/15/DXC_OpeningFinal/AddNewJob.aspx";
+            @__ctrl.NavigateUrl = "http://win-ikp5n1jcalv:1111/sites/HomePages/_layouts/15/DXC_OpeningFinal/AddNewJo" +
+                "b.aspx";
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("Add New"));
             return @__ctrl;

@@ -55,12 +55,12 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlTemplates\DXC_OpeningFinal\AddNewJob.ascx.cs">
-      <DependentUpon>AddNewJob.ascx</DependentUpon>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx.cs">
+      <DependentUpon>Control_AddNewJob.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ControlTemplates\DXC_OpeningFinal\AddNewJob.ascx.designer.cs">
-      <DependentUpon>AddNewJob.ascx.cs</DependentUpon>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx.designer.cs">
+      <DependentUpon>Control_AddNewJob.ascx.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlTemplates\DXC_OpeningFinal\AllJob.ascx.cs">
       <DependentUpon>AllJob.ascx</DependentUpon>
@@ -138,6 +138,7 @@
       <SharePointProjectItemId>{08a4f1c9-b9a1-4a7a-87b7-57c6e28d8c28}</SharePointProjectItemId>
     </None>
     <None Include="key.snk" />
+    <None Include="Layouts\img\Thumbs.db" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c09ce8b1-403a-494b-a426-2e416be88afd}</SharePointProjectItemId>
     </None>
@@ -154,7 +155,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="ControlTemplates\DXC_OpeningFinal\AddNewJob.ascx" />
+    <Content Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx" />
     <Content Include="ControlTemplates\DXC_OpeningFinal\AllJob.ascx" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
@@ -175,6 +176,9 @@
     <Content Include="Layouts\DXC_OpeningFinal\AddNewJob.aspx" />
     <Content Include="Layouts\DXC_OpeningFinal\AllJobs.aspx" />
     <Content Include="Layouts\DXC_OpeningFinal\JobDetail.aspx" />
+    <Content Include="Layouts\img\button_72.gif" />
+    <Content Include="Layouts\img\error.png" />
+    <Content Include="Layouts\img\error_small.png" />
     <Content Include="Layouts\JScript\AddNewJob.js" />
     <Content Include="Layouts\JScript\SSOM.js" />
     <Content Include="Layouts\Style\CSS.css" />

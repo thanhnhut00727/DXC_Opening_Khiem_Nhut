@@ -20,7 +20,7 @@
        </div>
 
         <span>
-            <asp:HyperLink ID="LinkAddNewJob2" runat="server" NavigateUrl="http://win-ikp5n1jcalv:8888/_layouts/15/DXC_OpeningFinal/AddNewJob.aspx">Add New</asp:HyperLink>
+            <asp:HyperLink ID="LinkAddNewJob2" runat="server" NavigateUrl="http://win-ikp5n1jcalv:1111/sites/HomePages/_layouts/15/DXC_OpeningFinal/AddNewJob.aspx">Add New</asp:HyperLink>
         </span>
     </div>
 

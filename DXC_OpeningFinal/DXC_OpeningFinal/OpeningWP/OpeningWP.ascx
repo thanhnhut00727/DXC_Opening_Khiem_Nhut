@@ -34,10 +34,10 @@
 </div>
 <section class="Hyperlink">
     <div>
-        <asp:HyperLink ID="LinkAllJob" runat="server" NavigateUrl="http://win-ikp5n1jcalv:8888/_layouts/15/DXC_OpeningFinal/AllJobs.aspx">All Job Opportunities</asp:HyperLink>
+        <asp:HyperLink ID="LinkAllJob" runat="server" NavigateUrl="http://win-ikp5n1jcalv:1111/sites/HomePages/_layouts/15/DXC_OpeningFinal/AllJobs.aspx">All Job Opportunities</asp:HyperLink>
     </div>
     <div>
-        <asp:HyperLink ID="LinkAddNew" runat="server" NavigateUrl="http://win-ikp5n1jcalv:8888/_layouts/15/DXC_OpeningFinal/AddNewJob.aspx">Add New</asp:HyperLink>
+        <asp:HyperLink ID="LinkAddNew" runat="server" NavigateUrl="http://win-ikp5n1jcalv:1111/sites/HomePages/_layouts/15/DXC_OpeningFinal/AddNewJob.aspx">Add New</asp:HyperLink>
     </div>
 </section>
 
