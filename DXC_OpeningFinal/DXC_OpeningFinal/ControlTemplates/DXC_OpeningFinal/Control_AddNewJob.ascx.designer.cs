@@ -10,7 +10,16 @@
 namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal {
     
     
-    public partial class AddNewJob {
+    public partial class Control_AddNewJob {
+        
+        /// <summary>
+        /// contentMap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SiteMapPath contentMap;
         
         /// <summary>
         /// lblJobtTitle control.
@@ -119,6 +128,24 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHRContact;
+        
+        /// <summary>
+        /// lblStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblStatus;
+        
+        /// <summary>
+        /// txtStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList txtStatus;
         
         /// <summary>
         /// SaveButton control.

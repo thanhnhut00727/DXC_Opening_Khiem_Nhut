@@ -7,6 +7,5 @@
        Type="DateTime"
        Required="FALSE"
        Group="Custom Site Columns">
-    <!--<Default>[today]</Default>-->
   </Field>
 </Elements>

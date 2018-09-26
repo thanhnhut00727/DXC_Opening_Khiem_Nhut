@@ -8,16 +8,15 @@ using System.Web.UI.WebControls.WebParts;
 
 namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
 {
-    public partial class AddNewJob : UserControl
+    public partial class Control_AddNewJob : UserControl
     {
-       
         protected void Page_Load(object sender, EventArgs e)
         {
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
         {
-             SPWeb web = SPContext.Current.Web;
+            SPWeb web = SPContext.Current.Web;
             if (web != null)
             {
                 web.AllowUnsafeUpdates = true;
@@ -32,7 +31,7 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
                     newItem["LongDescription"] = txtLongDes.Text;
                     newItem["RefernalBonus"] = txtReferralBonus.Text;
                     newItem["HRContact"] = txtHRContact.Text;
-                    //newItem["Status"] = txtStatus.Text;
+                    newItem["Status"] = txtStatus.Text;
                     newItem["PubDate"] = SPUtility.CreateISO8601DateTimeFromSystemDateTime(DateTime.Now);
 
                     newItem.Update();
@@ -45,4 +44,4 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
             }
         }
     }
-    }
+}

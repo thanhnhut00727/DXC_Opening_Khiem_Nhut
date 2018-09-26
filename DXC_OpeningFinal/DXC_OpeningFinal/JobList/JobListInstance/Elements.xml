@@ -13,6 +13,7 @@
           </Field>
           <Field Name="RefernalBonus">1000</Field>
           <Field Name="HRContact">Tran Thien Khien</Field>
+          <Field Name="PubDate">2018-09-30T21:00:00Z</Field>
         </Row>
         <Row>
           <Field Name="_JobTitle">.NET Developers</Field>
@@ -24,6 +25,7 @@
           </Field>
           <Field Name="RefernalBonus">2500</Field>
           <Field Name="HRContact">Tran Thanh Nhut</Field>
+          <Field Name="PubDate">2018-09-30T21:00:00Z</Field>
         </Row>
         <Row>
           <Field Name="_JobTitle">PHP Developers</Field>
@@ -34,6 +36,7 @@
           </Field>
           <Field Name="RefernalBonus">3000</Field>
           <Field Name="HRContact">Dong Van Vy</Field>
+          <Field Name="PubDate">2018-09-30T21:00:00Z</Field>
         </Row>
         <Row>
           <Field Name="_JobTitle">Python Developers</Field>
@@ -45,6 +48,7 @@
           <Field Name="RefernalBonus">6000</Field>
           <Field Name="Status">Close</Field>
           <Field Name="HRContact">Le Minh Tuan</Field>
+          <Field Name="PubDate">2018-09-30T21:00:00Z</Field>
         </Row>
       </Rows>
     </Data>

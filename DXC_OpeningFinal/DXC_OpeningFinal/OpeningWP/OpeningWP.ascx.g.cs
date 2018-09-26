@@ -64,11 +64,10 @@ namespace DXC_OpeningFinal.OpeningWP {
             global::System.Web.UI.DataBoundLiteralControl @__ctrl;
             @__ctrl = new global::System.Web.UI.DataBoundLiteralControl(2, 1);
             @__ctrl.TemplateControl = this;
-            @__ctrl.SetStaticString(0, "  \r\n                <tr>  \r\n                    <td>  \r\n                         " +
-                    " <h2>");
-            @__ctrl.SetStaticString(1, "</h2>\r\n                    </td> \r\n                    <td>\r\n                    " +
-                    "    <a href=\"#\">read more</a>\r\n                    </td>  \r\n                </tr" +
-                    ">  \r\n            ");
+            @__ctrl.SetStaticString(0, "\r\n                <tr>\r\n                    <td>\r\n                        <h2>");
+            @__ctrl.SetStaticString(1, "</h2>\r\n                    </td>\r\n                    <td>\r\n                     " +
+                    "   <a href=\"#\">read more</a>\r\n                    </td>\r\n                </tr>\r\n" +
+                    "            ");
             @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control3);
             return @__ctrl;
         }
@@ -115,8 +114,7 @@ namespace DXC_OpeningFinal.OpeningWP {
             this.LinkAllJob = @__ctrl;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "LinkAllJob";
-            @__ctrl.NavigateUrl = "http://win-ikp5n1jcalv:1111/sites/HomePages/_layouts/15/DXC_OpeningFinal/AllJobs." +
-                "aspx";
+            @__ctrl.NavigateUrl = "~/_layouts/15/DXC_OpeningFinal/AllJobs.aspx";
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("All Job Opportunities"));
             return @__ctrl;
@@ -131,8 +129,7 @@ namespace DXC_OpeningFinal.OpeningWP {
             this.LinkAddNew = @__ctrl;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "LinkAddNew";
-            @__ctrl.NavigateUrl = "http://win-ikp5n1jcalv:1111/sites/HomePages/_layouts/15/DXC_OpeningFinal/AddNewJo" +
-                "b.aspx";
+            @__ctrl.NavigateUrl = "~/_layouts/15/DXC_OpeningFinal/AddNewJob.aspx";
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("Add New"));
             return @__ctrl;
@@ -144,23 +141,30 @@ namespace DXC_OpeningFinal.OpeningWP {
         private void @__BuildControlTree(global::DXC_OpeningFinal.OpeningWP.OpeningWP @__ctrl) {
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
-<link href=""/_layouts/15/Style/CSS.css"" rel=""stylesheet"" type=""text/css"" />
 
+<link href=""../_layouts/15/Style/CSS.css"" rel=""stylesheet"" type=""text/css"" />
+<script src=""../_layouts/15/JScript/jquery.js"" type=""text/javascript""></script>
+<script src=""../_layouts/15/JScript/dataTable.js"" type=""text/javascript""></script>
+<link rel=""stylesheet"" href=""../_layouts/15/Style/CssTable.css"" type=""text/css"" />  
+<script type=""text/javascript"">
+    $(document).ready(function () {
+        $('#mydata').dataTable({
+        });
+    });
+</script>
 <style type=""text/css"">
     .auto-style1 {
         height: 28px;
     }
 </style>
 
-<div>
-    <table id=""mydata"" class=""display"" cellspacing=""0"" width=""100%"">    
-    <tbody>  
+<table id=""mydata"" class=""display"" cellspacing=""0"" width=""100%"">
+    <tbody>
         "));
             global::System.Web.UI.WebControls.Repeater @__ctrl1;
             @__ctrl1 = this.@__BuildControlrptdatatable();
             @__parser.AddParsedSubObject(@__ctrl1);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("  \r\n    </tbody>  \r\n    </table> \r\n</div>\r\n<section class=\"Hyperlink\">\r\n    <div>" +
-                        "\r\n        "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n    </tbody>\r\n</table>\r\n<section class=\"Hyperlink\">\r\n    <div>\r\n        "));
             global::System.Web.UI.WebControls.HyperLink @__ctrl2;
             @__ctrl2 = this.@__BuildControlLinkAllJob();
             @__parser.AddParsedSubObject(@__ctrl2);
