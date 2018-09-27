@@ -50,6 +50,54 @@
           <Field Name="HRContact">Le Minh Tuan</Field>
           <Field Name="PubDate">2018-09-30T21:00:00Z</Field>
         </Row>
+        <Row>
+          <Field Name="_JobTitle">QA-QC Manager/ Lead</Field>
+          <Field Name="ShortDescription">Work closely with other QAs, engineers, analyst and product.</Field>
+          <Field Name="LongDescription">
+            Oversee the creation and execution of test plans and testing strategy for the scrum teams.
+            Perform or support team perform several types of testing to validate the software products.
+          </Field>
+          <Field Name="RefernalBonus">5000</Field>
+          <Field Name="Status">Open</Field>
+          <Field Name="HRContact">Le Minh Tuan</Field>
+          <Field Name="PubDate">2018-10-30T21:00:00Z</Field>
+        </Row>
+        <Row>
+          <Field Name="_JobTitle">Senior Tester (QC QA)</Field>
+          <Field Name="ShortDescription">Work closely with other QAs, engineers, analyst and product.</Field>
+          <Field Name="LongDescription">
+            Oversee the creation and execution of test plans and testing strategy for the scrum teams.
+            Perform or support team perform several types of testing to validate the software products.
+          </Field>
+          <Field Name="RefernalBonus">5000</Field>
+          <Field Name="Status">Open</Field>
+          <Field Name="HRContact">Le Minh Tuan</Field>
+          <Field Name="PubDate">2018-10-30T21:00:00Z</Field>
+        </Row>
+        <Row>
+          <Field Name="_JobTitle">QA QC Engineer</Field>
+          <Field Name="ShortDescription">Work closely with other QAs, engineers, analyst and product.</Field>
+          <Field Name="LongDescription">
+            Oversee the creation and execution of test plans and testing strategy for the scrum teams.
+            Perform or support team perform several types of testing to validate the software products.
+          </Field>
+          <Field Name="RefernalBonus">4000</Field>
+          <Field Name="Status">Close</Field>
+          <Field Name="HRContact">Le Huynh Thanh Tung</Field>
+          <Field Name="PubDate">2018-10-28T21:00:00Z</Field>
+        </Row>
+        <Row>
+          <Field Name="_JobTitle">Tester (QA QC)</Field>
+          <Field Name="ShortDescription">Work closely with other QAs, engineers, analyst and product.</Field>
+          <Field Name="LongDescription">
+            Oversee the creation and execution of test plans and testing strategy for the scrum teams.
+            Perform or support team perform several types of testing to validate the software products.
+          </Field>
+          <Field Name="RefernalBonus">5000</Field>
+          <Field Name="Status">Close</Field>
+          <Field Name="HRContact">Le Minh Tuan</Field>
+          <Field Name="PubDate">2018-10-30T21:00:00Z</Field>
+        </Row>
       </Rows>
     </Data>
   </ListInstance>

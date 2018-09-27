@@ -15,14 +15,6 @@
     }
 </style>
 
-<div id="breadcrumbcustom">
-    <asp:SiteMapPath ID="contentMap"
-	    runat="server"
-	    SiteMapProviders="SPContentMapProvider"
-	    RenderCurrentNodeAsLink="false"
-	    HideInteriorRootNodes="false"
-	    SkipLinkText="" />
-</div>
 
 <div>
     <div id="divContainer">

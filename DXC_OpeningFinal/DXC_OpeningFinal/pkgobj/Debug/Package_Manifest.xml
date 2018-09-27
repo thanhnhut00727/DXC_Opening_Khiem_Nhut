@@ -11,10 +11,7 @@
     <TemplateFile Location="Layouts\DXC_OpeningFinal\AddNewJob.aspx" />
     <TemplateFile Location="Layouts\DXC_OpeningFinal\AllJobs.aspx" />
     <TemplateFile Location="Layouts\DXC_OpeningFinal\JobDetail.aspx" />
-    <TemplateFile Location="Layouts\JScript\jquery.js" />
-    <TemplateFile Location="Layouts\JScript\datatable.js" />
     <TemplateFile Location="Layouts\Style\CSS.css" />
-    <TemplateFile Location="Layouts\Style\CssTable.css" />
     <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\AllJob.ascx" />
     <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx" />
   </TemplateFiles>

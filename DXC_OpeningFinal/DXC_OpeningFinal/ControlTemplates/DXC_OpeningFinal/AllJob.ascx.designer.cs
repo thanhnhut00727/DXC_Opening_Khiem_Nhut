@@ -13,15 +13,6 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal {
     public partial class AllJob {
         
         /// <summary>
-        /// contentMap control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SiteMapPath contentMap;
-        
-        /// <summary>
         /// rptdatatable control.
         /// </summary>
         /// <remarks>
@@ -29,5 +20,32 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptdatatable;
+        
+        /// <summary>
+        /// lnkBtnPrev control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkBtnPrev;
+        
+        /// <summary>
+        /// rptPages control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptPages;
+        
+        /// <summary>
+        /// lnkBtnNext control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkBtnNext;
     }
 }

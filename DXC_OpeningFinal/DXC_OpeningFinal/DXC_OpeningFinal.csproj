@@ -152,13 +152,16 @@
       <DependentUpon>Package.package</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Layouts\JScript\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="ControlTemplates\DXC_OpeningFinal\AllJob.ascx" />
     <Content Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
+    <Content Include="Image\grunge.png" />
     <Content Include="JobContentType\Elements.xml" />
     <Content Include="JobContentType\HRContact\Elements.xml" />
     <Content Include="JobContentType\LongDescription\Elements.xml" />
@@ -175,10 +178,7 @@
     <Content Include="Layouts\DXC_OpeningFinal\AddNewJob.aspx" />
     <Content Include="Layouts\DXC_OpeningFinal\AllJobs.aspx" />
     <Content Include="Layouts\DXC_OpeningFinal\JobDetail.aspx" />
-    <Content Include="Layouts\JScript\jquery.js" />
-    <Content Include="Layouts\JScript\datatable.js" />
     <Content Include="Layouts\Style\CSS.css" />
-    <Content Include="Layouts\Style\CssTable.css" />
     <Content Include="OpeningWP\Elements.xml" />
     <Content Include="OpeningWP\OpeningWP.ascx">
       <Generator>SharePointWebPartCodeGenerator</Generator>

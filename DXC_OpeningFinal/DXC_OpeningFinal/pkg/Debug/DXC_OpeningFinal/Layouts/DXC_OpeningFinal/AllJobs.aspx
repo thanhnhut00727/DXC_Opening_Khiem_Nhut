@@ -9,10 +9,15 @@
 <%@ Register TagPrefix="wssuc" TagName="AllJob"  Src="~/_controltemplates/15/DXC_OpeningFinal/AllJob.ascx" %>
 
 <asp:Content ID="PageHead" ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
- 
+
 </asp:Content>
 
 <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
+    
+   <asp:SiteMapPath SiteMapProvider="CurrentNavSiteMapProviderNoEncode" id="SiteMapPath1" SkipLinkText="" NodeStyle-CssClass="ms-sitemapdirectional" runat="server" RenderCurrentNodeAsLink="True">
+				<NodeStyle CssClass="ms-sitemapdirectional" />
+			</asp:SiteMapPath> 
+   
     
     <div class="container">
        <div>

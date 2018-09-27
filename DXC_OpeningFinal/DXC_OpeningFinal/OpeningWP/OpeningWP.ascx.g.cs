@@ -65,9 +65,7 @@ namespace DXC_OpeningFinal.OpeningWP {
             @__ctrl = new global::System.Web.UI.DataBoundLiteralControl(2, 1);
             @__ctrl.TemplateControl = this;
             @__ctrl.SetStaticString(0, "\r\n                <tr>\r\n                    <td>\r\n                        <h2>");
-            @__ctrl.SetStaticString(1, "</h2>\r\n                    </td>\r\n                    <td>\r\n                     " +
-                    "   <a href=\"#\">read more</a>\r\n                    </td>\r\n                </tr>\r\n" +
-                    "            ");
+            @__ctrl.SetStaticString(1, "</h2>\r\n                        ");
             @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control3);
             return @__ctrl;
         }
@@ -86,11 +84,42 @@ namespace DXC_OpeningFinal.OpeningWP {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.Label @__BuildControl__control4() {
+            global::System.Web.UI.WebControls.Label @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Label();
+            @__ctrl.TemplateControl = this;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.CssClass = "date";
+            @__ctrl.ID = "lblDate";
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control4);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        public void @__DataBinding__control4(object sender, System.EventArgs e) {
+            System.Web.UI.WebControls.Label dataBindingExpressionBuilderTarget;
+            System.Web.UI.WebControls.RepeaterItem Container;
+            dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.Label)(sender));
+            Container = ((System.Web.UI.WebControls.RepeaterItem)(dataBindingExpressionBuilderTarget.BindingContainer));
+            dataBindingExpressionBuilderTarget.Text = global::System.Convert.ToString( Eval("PubDate","{0:dd/MM/yyyy}") , global::System.Globalization.CultureInfo.CurrentCulture);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
         private void @__BuildControl__control2(System.Web.UI.Control @__ctrl) {
             global::System.Web.UI.DataBoundLiteralControl @__ctrl1;
             @__ctrl1 = this.@__BuildControl__control3();
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(@__ctrl1);
+            global::System.Web.UI.WebControls.Label @__ctrl2;
+            @__ctrl2 = this.@__BuildControl__control4();
+            @__parser.AddParsedSubObject(@__ctrl2);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <a" +
+                        " href=\"#\">read more >></a>\r\n                    </td>\r\n                </tr>\r\n  " +
+                        "          "));
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -128,6 +157,7 @@ namespace DXC_OpeningFinal.OpeningWP {
             @__ctrl = new global::System.Web.UI.WebControls.HyperLink();
             this.LinkAddNew = @__ctrl;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.CssClass = "hyperlinkAddnew";
             @__ctrl.ID = "LinkAddNew";
             @__ctrl.NavigateUrl = "~/_layouts/15/DXC_OpeningFinal/AddNewJob.aspx";
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
@@ -143,22 +173,16 @@ namespace DXC_OpeningFinal.OpeningWP {
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
 
 <link href=""../_layouts/15/Style/CSS.css"" rel=""stylesheet"" type=""text/css"" />
-<script src=""../_layouts/15/JScript/jquery.js"" type=""text/javascript""></script>
-<script src=""../_layouts/15/JScript/dataTable.js"" type=""text/javascript""></script>
-<link rel=""stylesheet"" href=""../_layouts/15/Style/CssTable.css"" type=""text/css"" />  
-<script type=""text/javascript"">
-    $(document).ready(function () {
-        $('#mydata').dataTable({
-        });
-    });
-</script>
 <style type=""text/css"">
     .auto-style1 {
         height: 28px;
     }
 </style>
 
-<table id=""mydata"" class=""display"" cellspacing=""0"" width=""100%"">
+
+<h2 id=""title"">Opening Vacancies</h2>
+
+<table id=""tableWP"" class=""display"" cellspacing=""0"" width=""100%"">
     <tbody>
         "));
             global::System.Web.UI.WebControls.Repeater @__ctrl1;

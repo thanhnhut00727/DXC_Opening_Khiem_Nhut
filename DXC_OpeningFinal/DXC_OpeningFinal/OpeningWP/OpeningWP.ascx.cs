@@ -22,14 +22,29 @@ namespace DXC_OpeningFinal.OpeningWP
             base.OnInit(e);
             InitializeControl();
         }
-
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             SPWeb web = SPContext.Current.Web;
-            SPList list = web.Lists["JobList"];
-            SPListItemCollection items = list.Items;
-            rptdatatable.DataSource = items.GetDataTable();
-            rptdatatable.DataBind();  
+            //SPList list = web.Lists["JobList"];
+            //SPListItemCollection items = list.Items;
+            //rptdatatable.DataSource = items.GetDataTable();
+            //rptdatatable.DataBind();  
+            SPListItemCollection listItems = null;
+            SPList spList = web.Lists.TryGetList("JobList");
+            if (spList != null)
+            {
+                SPQuery qry = new SPQuery();
+                qry.RowLimit = 5;
+                qry.Query =
+                @"   <OrderBy>
+                <FieldRef Name='PubDate' Ascending='FALSE' />
+                </OrderBy>"; 
+                 listItems = spList.GetItems(qry);
+            }
+            
+            rptdatatable.DataSource = listItems.GetDataTable();
+            rptdatatable.DataBind();
         }
     }
 }
