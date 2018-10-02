@@ -46,7 +46,7 @@
 
         <div id="editButton">
             <div>
-                <asp:LinkButton ID="btn_Update" runat="server">Update</asp:LinkButton>
+                <asp:LinkButton ID="btn_Update" runat="server" OnClick="btn_Update_Click">Update</asp:LinkButton>
             </div>
             <div>
                 <asp:LinkButton ID="btn_Delete" runat="server" OnClick="btn_Delete_Click">Delete</asp:LinkButton>

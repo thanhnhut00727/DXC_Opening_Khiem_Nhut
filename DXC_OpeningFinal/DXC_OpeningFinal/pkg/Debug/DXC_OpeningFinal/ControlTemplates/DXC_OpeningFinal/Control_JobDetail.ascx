@@ -11,14 +11,9 @@
 <html lang="en">
 <head>
     <link href="/_layouts/15/Style/CSS.css" rel="stylesheet" type="text/css" />
-    <link href="/_layouts/15/Style/font-awesome-ie7.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="/_layouts/15/Style/font-awesome-ie7.min.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="/_layouts/15/Style/font-awesome.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="/_layouts/15/Style/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
 </head>
 <body>
-    <i class="icon-usd"></i> icon-usd
-    <i class="icon-paper-clip"></i> icon-paper-clip
+    
     <div style="margin-bottom: 10px">
         <asp:SiteMapPath SiteMapProvider="CurrentNavSiteMapProviderNoEncode" ID="SiteMapPath1" SkipLinkText="" NodeStyle-CssClass="ms-sitemapdirectional" runat="server" RenderCurrentNodeAsLink="True">
             <NodeStyle CssClass="ms-sitemapdirectional" />
@@ -30,7 +25,7 @@
                 <asp:Literal ID="p_jobtitle" runat="server"></asp:Literal>
             </p>
             <div class="date margin">
-                <i style="padding-right: 10px; vertical-align: inherit;" class="icon-time"></i><asp:Label ID="lblpubDate" Text="" runat="server"></asp:Label>
+                <asp:Label ID="lblpubDate" Text="" runat="server"></asp:Label>
             </div>
         </div>
         <p id="shortDes">
@@ -51,7 +46,7 @@
 
         <div id="editButton">
             <div>
-                <asp:LinkButton ID="btn_Update" runat="server">Update</asp:LinkButton>
+                <asp:LinkButton ID="btn_Update" runat="server" OnClick="btn_Update_Click">Update</asp:LinkButton>
             </div>
             <div>
                 <asp:LinkButton ID="btn_Delete" runat="server" OnClick="btn_Delete_Click">Delete</asp:LinkButton>

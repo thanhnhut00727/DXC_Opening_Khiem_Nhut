@@ -57,6 +57,13 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx.cs">
+      <DependentUpon>Control_UpdateJob.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx.designer.cs">
+      <DependentUpon>Control_UpdateJob.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx.cs">
       <DependentUpon>Control_AllJob.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -98,6 +105,13 @@
     </Compile>
     <Compile Include="Layouts\page\JobDetail.aspx.designer.cs">
       <DependentUpon>JobDetail.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\page\UpdateJob.aspx.cs">
+      <DependentUpon>UpdateJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\page\UpdateJob.aspx.designer.cs">
+      <DependentUpon>UpdateJob.aspx.cs</DependentUpon>
     </Compile>
     <Compile Include="OpeningVacaniesWP\OpeningVacaniesWP.cs" />
     <Compile Include="OpeningVacaniesWP\OpeningVacaniesWPUserControl.ascx.cs">
@@ -165,6 +179,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx" />
     <Content Include="Layouts\img\background-jobdetail.jpg" />
     <Content Include="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx" />
     <Content Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx" />
@@ -190,6 +205,7 @@
     <Content Include="Layouts\page\AddNewJob.aspx" />
     <Content Include="Layouts\page\AllJobs.aspx" />
     <Content Include="Layouts\page\JobDetail.aspx" />
+    <Content Include="Layouts\page\UpdateJob.aspx" />
     <Content Include="Layouts\Style\CSS.css" />
     <Content Include="OpeningVacaniesWP\Elements.xml" />
     <Content Include="OpeningVacaniesWP\OpeningVacaniesWPUserControl.ascx" />

@@ -15,11 +15,9 @@
     <TemplateFile Location="Layouts\page\AddNewJob.aspx" />
     <TemplateFile Location="Layouts\page\AllJobs.aspx" />
     <TemplateFile Location="Layouts\page\JobDetail.aspx" />
+    <TemplateFile Location="Layouts\page\UpdateJob.aspx" />
     <TemplateFile Location="Layouts\Style\CSS.css" />
-    <TemplateFile Location="Layouts\Style\font-awesome-ie7.css" />
-    <TemplateFile Location="Layouts\Style\font-awesome-ie7.min.css" />
-    <TemplateFile Location="Layouts\Style\font-awesome.css" />
-    <TemplateFile Location="Layouts\Style\font-awesome.min.css" />
+    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx" />
     <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx" />
     <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx" />
     <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_JobDetail.ascx" />
