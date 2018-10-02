@@ -6,30 +6,39 @@
 <%@ Import Namespace="Microsoft.SharePoint" %>
 <%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Control_AddNewJob.ascx.cs" Inherits="DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal.Control_AddNewJob" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/_layouts/15/Style/CSS.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
 
+    <div style="margin-bottom: 10px">
+        <asp:SiteMapPath PathSeparator="" SiteMapProvider="CurrentNavSiteMapProviderNoEncode" ID="SiteMapPath1" SkipLinkText="" NodeStyle-CssClass="ms-sitemapdirectional" runat="server" RenderCurrentNodeAsLink="True">
+        </asp:SiteMapPath>
+    </div>
+    <div id="notification" runat="server" class="notification" visible="false">
+        <asp:Label ID="lblNotification" Text="" runat="server"></asp:Label>
+    </div>
 
-
-<style type="text/css">
-    .auto-style1 {
-        width: 120px;
-    }
-</style>
-
-
-<div>
     <div id="divContainer">
-        <table style="width: 465px;">
+        <table>
             <%--  --Colum Job Title--%>
             <tr>
                 <td class="auto-style1">
                     <asp:Label ID="lblJobtTitle" runat="server">Job Title :</asp:Label>
                 </td>
                 <td class="col2">
-                    <asp:TextBox ID="txtJobTitle" runat="server" Width="216px"></asp:TextBox>
+                    <asp:TextBox ID="txtJobTitle" runat="server" Width="98%"></asp:TextBox>
                 </td>
                 <td class="col3">
                     <asp:RequiredFieldValidator ID="vldJobTitle" runat="server"
-                        ControlToValidate="txtJobTitle"><img src="../../../_layouts/15/img/error.png" /></asp:RequiredFieldValidator>
+                        ControlToValidate="txtJobTitle"><img src="/_layouts/15/img/error.png" style="width:25px; height:25px" /></asp:RequiredFieldValidator>
                 </td>
             </tr>
 
@@ -39,11 +48,11 @@
                     <asp:Label ID="lblShortDes" runat="server">Short Description :</asp:Label>
                 </td>
                 <td class="col2">
-                    <asp:TextBox ID="txtShortDes" runat="server" Width="216px"></asp:TextBox>
+                    <asp:TextBox ID="txtShortDes" runat="server" Width="98%"></asp:TextBox>
                 </td>
                 <td class="col3">
                     <asp:RequiredFieldValidator ID="vldShortDes" runat="server"
-                        ControlToValidate="txtShortDes"><img src="../../../_layouts/15/img/error.png" /></asp:RequiredFieldValidator>
+                        ControlToValidate="txtShortDes"><img src="/_layouts/15/img/error.png" style="width:25px; height:25px"/></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <%-- -- Colum LongShort--%>
@@ -52,12 +61,8 @@
                     <asp:Label ID="lblLongDes" runat="server">Long DesCription :</asp:Label>
                 </td>
                 <td class="col2">
-                    <asp:TextBox ID="txtLongDes" runat="server" TextMode="MultiLine" Rows="5" Width="216px"></asp:TextBox>
+                    <asp:TextBox ID="txtLongDes" runat="server" TextMode="MultiLine" Rows="9" Width="98%"></asp:TextBox>
                 </td>
-                <%--<td class="col3">
-                        <asp:RequiredFieldValidator ID="vldLongDes" runat="server" 
-                            ControlToValidate="txtLongDes"><img src="../../../_layouts/15/img/error_small.png" /></asp:RequiredFieldValidator>
-                    </td>--%>
             </tr>
 
             <%-- --Column Referral Bonus--%>
@@ -68,12 +73,11 @@
                 <td class="col2">
                     <asp:TextBox ID="txtReferralBonus" runat="server" Width="216px"></asp:TextBox>
                 </td>
-                <%-- <td class="col3">
-                        <asp:RequiredFieldValidator ID="vldReferralBonus" runat="server" 
-                            ControlToValidate="txtReferralBonus"><img src="../../../_layouts/15/img/error_small.png" /></asp:RequiredFieldValidator>
-                    </td>--%>
+                <td class="col3">
+                    <asp:RegularExpressionValidator ControlToValidate="txtReferralBonus" ValidationExpression="\d+" Display="Static" EnableClientScript="true"
+                        ID="RegularExpressionValidator1" runat="server" ErrorMessage="Referral must be number"></asp:RegularExpressionValidator>
+                </td>
             </tr>
-
             <%--  --- culunm HR Contact--%>
             <tr>
                 <td class="auto-style1">
@@ -82,12 +86,11 @@
                 <td class="col2">
                     <asp:TextBox ID="txtHRContact" runat="server" Width="216px"></asp:TextBox>
                 </td>
-                <%-- <td class="col3">
-                        <asp:RequiredFieldValidator ID="vldHRContact" runat="server" 
-                            ControlToValidate="txtHRContact"><img src="../../../_layouts/15/img/error_small.png" /></asp:RequiredFieldValidator>
-                    </td>--%>
+                <td class="col3">
+                    <asp:RequiredFieldValidator ID="vldHRContact" runat="server"
+                        ControlToValidate="txtHRContact"><img src="/_layouts/15/img/error.png" style="width:25px; height:25px"/></asp:RequiredFieldValidator>
+                </td>
             </tr>
-
             <%--  --- Colum Status--%>
             <tr>
                 <td class="auto-style1">
@@ -101,14 +104,18 @@
                 </td>
 
             </tr>
-            <tr>
-
-                <td class="auto-style1"></td>
-                <td>
-                    <asp:Button runat="server" Text="Save" ID="SaveButton" Height="28px" Width="90px" OnClick="SaveButton_Click"/>
-                    <asp:Button runat="server" Text="Cancel" ID="CancelButton" Height="28px" Width="90px" />
-                </td>
-            </tr>
         </table>
+        <div id="submitButton">
+            <div>
+                <asp:Button runat="server" Text="Add" ID="SaveButton" Height="28px" Width="90px" OnClick="SaveButton_Click" />
+            </div>
+            <div>
+                <asp:Button runat="server" Text="Cancel" ID="CancelButton" Height="28px" Width="90px" OnClick="CancelButton_Click" />
+            </div>
+        </div>
     </div>
-</div>
+
+</body>
+</html>
+
+

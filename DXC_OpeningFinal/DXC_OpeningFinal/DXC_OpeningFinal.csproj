@@ -46,21 +46,23 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlTemplates\DXC_OpeningFinal\AllJob.ascx.cs">
-      <DependentUpon>AllJob.ascx</DependentUpon>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx.cs">
+      <DependentUpon>Control_AllJob.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ControlTemplates\DXC_OpeningFinal\AllJob.ascx.designer.cs">
-      <DependentUpon>AllJob.ascx.cs</DependentUpon>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx.designer.cs">
+      <DependentUpon>Control_AllJob.ascx.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx.cs">
       <DependentUpon>Control_AddNewJob.ascx</DependentUpon>
@@ -69,34 +71,41 @@
     <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx.designer.cs">
       <DependentUpon>Control_AddNewJob.ascx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\DXC_OpeningFinal\AddNewJob.aspx.cs">
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_JobDetail.ascx.cs">
+      <DependentUpon>Control_JobDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_JobDetail.ascx.designer.cs">
+      <DependentUpon>Control_JobDetail.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\page\AddNewJob.aspx.cs">
       <DependentUpon>AddNewJob.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layouts\DXC_OpeningFinal\AddNewJob.aspx.designer.cs">
+    <Compile Include="Layouts\page\AddNewJob.aspx.designer.cs">
       <DependentUpon>AddNewJob.aspx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\DXC_OpeningFinal\AllJobs.aspx.cs">
+    <Compile Include="Layouts\page\AllJobs.aspx.cs">
       <DependentUpon>AllJobs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layouts\DXC_OpeningFinal\AllJobs.aspx.designer.cs">
+    <Compile Include="Layouts\page\AllJobs.aspx.designer.cs">
       <DependentUpon>AllJobs.aspx.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layouts\DXC_OpeningFinal\JobDetail.aspx.cs">
+    <Compile Include="Layouts\page\JobDetail.aspx.cs">
       <DependentUpon>JobDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Layouts\DXC_OpeningFinal\JobDetail.aspx.designer.cs">
+    <Compile Include="Layouts\page\JobDetail.aspx.designer.cs">
       <DependentUpon>JobDetail.aspx.cs</DependentUpon>
     </Compile>
-    <Compile Include="OpeningWP\OpeningWP.ascx.cs">
-      <DependentUpon>OpeningWP.ascx</DependentUpon>
+    <Compile Include="OpeningVacaniesWP\OpeningVacaniesWP.cs" />
+    <Compile Include="OpeningVacaniesWP\OpeningVacaniesWPUserControl.ascx.cs">
+      <DependentUpon>OpeningVacaniesWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="OpeningWP\OpeningWP.ascx.g.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OpeningWP.ascx</DependentUpon>
+    <Compile Include="OpeningVacaniesWP\OpeningVacaniesWPUserControl.ascx.designer.cs">
+      <DependentUpon>OpeningVacaniesWPUserControl.ascx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -141,9 +150,9 @@
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c09ce8b1-403a-494b-a426-2e416be88afd}</SharePointProjectItemId>
     </None>
-    <None Include="OpeningWP\OpeningWP.webpart" />
-    <None Include="OpeningWP\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{667b03bf-7ded-413b-8ad7-fbee5deefbb5}</SharePointProjectItemId>
+    <None Include="OpeningVacaniesWP\OpeningVacaniesWP.webpart" />
+    <None Include="OpeningVacaniesWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0936fb94-d5f5-4d23-9646-94c5e14cefd2}</SharePointProjectItemId>
     </None>
     <None Include="Package\Package.package">
       <PackageId>{7870a203-c34e-40c6-a059-b3e111320fb7}</PackageId>
@@ -153,15 +162,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Layouts\JScript\" />
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ControlTemplates\DXC_OpeningFinal\AllJob.ascx" />
+    <Content Include="Layouts\img\background-jobdetail.jpg" />
+    <Content Include="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx" />
     <Content Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx" />
+    <Content Include="ControlTemplates\DXC_OpeningFinal\Control_JobDetail.ascx" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
-    <Content Include="Image\grunge.png" />
     <Content Include="JobContentType\Elements.xml" />
     <Content Include="JobContentType\HRContact\Elements.xml" />
     <Content Include="JobContentType\LongDescription\Elements.xml" />
@@ -175,15 +185,14 @@
     <Content Include="JobList\Elements.xml" />
     <Content Include="JobList\JobListInstance\Elements.xml" />
     <Content Include="JobList\Schema.xml" />
-    <Content Include="Layouts\DXC_OpeningFinal\AddNewJob.aspx" />
-    <Content Include="Layouts\DXC_OpeningFinal\AllJobs.aspx" />
-    <Content Include="Layouts\DXC_OpeningFinal\JobDetail.aspx" />
+    <Content Include="Layouts\img\error.png" />
+    <Content Include="Layouts\img\note.png" />
+    <Content Include="Layouts\page\AddNewJob.aspx" />
+    <Content Include="Layouts\page\AllJobs.aspx" />
+    <Content Include="Layouts\page\JobDetail.aspx" />
     <Content Include="Layouts\Style\CSS.css" />
-    <Content Include="OpeningWP\Elements.xml" />
-    <Content Include="OpeningWP\OpeningWP.ascx">
-      <Generator>SharePointWebPartCodeGenerator</Generator>
-      <LastGenOutput>OpeningWP.ascx.g.cs</LastGenOutput>
-    </Content>
+    <Content Include="OpeningVacaniesWP\Elements.xml" />
+    <Content Include="OpeningVacaniesWP\OpeningVacaniesWPUserControl.ascx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

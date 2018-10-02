@@ -1,21 +1,12 @@
 ﻿
-
 .stamp {
-    transform: rotate(12deg);
-    color: #555;
-    font-size: 3rem;
     font-weight: 700;
-    border: 0.25rem solid #555;
     display: inline-block;
-    padding: 0.25rem 1rem;
     text-transform: uppercase;
-    border-radius: 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
     font-family: 'Courier';
-    width:120px;
-    -webkit-mask-image: url(Image/grunge.png);
-    mask-image: url(Image/grunge.png);
-    /*-webkit-mask-size: 944px 604px;
-    mix-blend-mode: multiply;*/
+    width: 120px;
 }
 
 .Close {
@@ -90,22 +81,6 @@
     background: #f1f1f1;
 }
 
-/*.Open {
-    background: green;
-    padding: 10px;
-    position: absolute;
-    font-weight: bold;
-    color: white;
-    left: 70%;
-}*/
-/*.Close{
-    background:red;
-    padding:10px;
-    position:absolute;
-    font-weight: bold;
-    color: white;
-    left:70%;
-}*/
 #tableWP {
     border: 1px solid;
     box-sizing: border-box;
@@ -117,10 +92,12 @@
         position: relative;
         padding: 5px;
         border-radius: 7px;
+        border: 1px solid #be3b3b;
     }
 
         #tableWP tr td a:hover {
             background: #50a8e5;
+            border: 1px solid #50a8e5;
         }
 
             #tableWP tr td a:hover:before {
@@ -132,11 +109,11 @@
             width: 0;
             height: 0;
             right: 100%;
-            top: 7px;
+            top: 8px;
             position: absolute;
-            border-top: 7px solid transparent;
-            border-right: 15px solid #be3b3b;
-            border-bottom: 7px solid transparent;
+            border-top: 5px solid transparent;
+            border-right: 10px solid #be3b3b;
+            border-bottom: 5px solid transparent;
         }
 
 .date {
@@ -153,132 +130,76 @@
     font-weight: bold;
 }
 
-/*============================*/
-
-/* Breadcrumb
-
-/*============================*/
-
-
-
-/* Hide the text for the home link */
-
-.breadcrumb a.home {
-    color: transparent;
-    font-size: 1px;
-    vertical-align: middle;
+#jobDetail { 
+    width: 80%;  
+    background-image: url(/_layouts/15/img/background-jobdetail.jpg);
+    padding: 1em;
+    border-radius:10px;
 }
 
-    .breadcrumb a.home:hover {
-        color: transparent;
-    }
-
-
-
-    /* Add the 'home' icon from Google's Material Design Icons */
-
-    .breadcrumb a.home:before {
-        font-family: "Material Icons";
-        content: '\E88A';
-        font-size: 24px;
-        color: #d1d1d1;
-        width: 20px;
-        height: 20px;
-        overflow: hidden;
-        vertical-align: middle;
-        outline: none;
-        border: 0;
-        box-shadow: none;
-        background: transparent;
-    }
-
-    .breadcrumb a.home:hover:before {
-        color: #fff !important;
-    }
-
-
-
-/* Begin breadcrumb wrap style */
-
-.breadcrumb {
-    display: inline-block;
-    border-radius: 5px;
-    overflow: hidden;
-    border: 1px solid #e1e1e1;
-    margin-bottom: 35px;
+#title_Job {
+    border-bottom: 2px dotted black;
+}
+#title_Job p{
+    font-size: 3.5em;
+    font-weight: bold;
+    color: black;
+    margin: 0;
 }
 
+#editButton {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 2em;
+}
+#editButton div {
+    margin-left: 15px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #bbdcf3;
+}
 
-
-    .breadcrumb a {
-        display: inline-block;
-        font-size: 12px;
-        line-height: 28px;
-        color: #222;
-        position: relative;
-        text-align: center;
-    }
-
-        .breadcrumb a:first-child {
-            padding-left: 26px;
-            border-radius: 5px 0 0 5px;
-        }
-
-        .breadcrumb a:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: -14px;
-            width: 28px;
-            height: 28px;
-            transform: scale(0.707) rotate(45deg);
-            z-index: 1;
-            box-shadow: 1px -1px 0 1px #e1e1e1;
-            border-radius: 0 5px 0 50px;
-        }
-
-
-
-    /* Set the color for the current breadcrumb node */
-
-    .breadcrumb .current {
-        color: #0072C6;
-    }
-
-
-
-    /* Tidy up the position on our custom css classes we added to each breadcrumb node */
-
-    .breadcrumb a.home {
-        padding-left: 12px;
-    }
-
-    .breadcrumb a.bc-node {
-        padding-right: 10px;
-    }
-
-    .breadcrumb .current {
-        padding: 0 15px;
-        margin-left: 10px;
-    }
-
-
-
-    /* Breadcrumb hover styles */
-
-    .breadcrumb a,
-    .breadcrumb a:after {
-        background: #fff;
-        color: #222;
-        transition: all 0.35s ease-in-out;
-    }
-
-        .breadcrumb a:hover,
-        .breadcrumb a:hover:after {
-            background: #0072C6;
-            color: #fff;
-        }
-
-            .breadcrumb a:hover:before {
-                color: #0072C6;
-            }
+#shortDes{
+    font-size: 20px;
+    font-weight: bold;
+}
+#longDes{
+    font-size: 20px;
+}
+#contact{
+    font-size: 15px;
+    color: blue;
+}
+#divContainer{
+    border: 1px solid #06a1e7;
+    padding: 10px;
+    background-image: url(/_layouts/15/img/background-jobdetail.jpg);
+    width: 90%;
+}
+#divContainer table{
+    width: 540px;
+}
+#divContainer table tr{
+    margin-bottom:15px;
+}
+#submitButton{
+    margin:20px 0 10px 0;
+    width: 540px;
+    display:flex;
+    justify-content: flex-end;
+}
+.notification{
+    margin: 10px 0 10px 0;
+    width: 92%;
+    font-size: 15px;
+    color: black;
+    background: #ddd;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: 1px solid #06a1e7;
+    padding: 10px;
+}
+.margin{
+    margin:10px 0 10px 0;
+}

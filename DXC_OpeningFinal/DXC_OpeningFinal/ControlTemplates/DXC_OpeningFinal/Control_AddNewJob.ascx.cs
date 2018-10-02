@@ -12,36 +12,50 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
-        {
-            SPWeb web = SPContext.Current.Web;
-            if (web != null)
+        {         
+            try
             {
-                web.AllowUnsafeUpdates = true;
 
-                SPList list = web.Lists["JobList"];
-                if (list != null)
+                SPWeb web = SPContext.Current.Web;
+                if (web != null)
                 {
-                    SPListItem newItem = list.AddItem();
+                    web.AllowUnsafeUpdates = true;
 
-                    newItem["_JobTitle"] = txtJobTitle.Text;
-                    newItem["ShortDescription"] = txtShortDes.Text;
-                    newItem["LongDescription"] = txtLongDes.Text;
-                    newItem["RefernalBonus"] = txtReferralBonus.Text;
-                    newItem["HRContact"] = txtHRContact.Text;
-                    newItem["Status"] = txtStatus.Text;
-                    newItem["PubDate"] = SPUtility.CreateISO8601DateTimeFromSystemDateTime(DateTime.Now);
+                    SPList list = web.Lists["JobList"];
+                    if (list != null)
+                    {
+                        SPListItem newItem = list.AddItem();
 
-                    newItem.Update();
-
-                    string listUrl = web.ServerRelativeUrl + "/Lists/JobList";
-                    SPUtility.Redirect(listUrl, SPRedirectFlags.Default, HttpContext.Current);
+                        newItem["_JobTitle"] = txtJobTitle.Text;
+                        newItem["ShortDescription"] = txtShortDes.Text;
+                        newItem["LongDescription"] = txtLongDes.Text;
+                        newItem["RefernalBonus"] = txtReferralBonus.Text;
+                        newItem["HRContact"] = txtHRContact.Text;
+                        newItem["Status"] = txtStatus.Text;
+                        newItem["PubDate"] = DateTime.Now;
+                        newItem.Update();
+                    }
+                    web.AllowUnsafeUpdates = false;
                 }
-
-                web.AllowUnsafeUpdates = false;
+                
+                lblNotification.Text = "Add new job was successful";
+                notification.Visible = true;
+                
             }
+            catch (Exception)
+            {
+                lblNotification.Text = "Sorry, can not add new job !";
+            }
+            
+        }
+
+        protected void CancelButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/_layouts/15/page/AllJobs.aspx");
         }
     }
 }

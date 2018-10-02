@@ -3,17 +3,26 @@
   <Assemblies>
     <Assembly Location="DXC_OpeningFinal.dll" DeploymentTarget="GlobalAssemblyCache">
       <SafeControls>
-        <SafeControl Assembly="DXC_OpeningFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6ce3279edf1ab8cf" Namespace="DXC_OpeningFinal.OpeningWP" TypeName="*" />
+        <SafeControl Assembly="DXC_OpeningFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6ce3279edf1ab8cf" Namespace="DXC_OpeningFinal.OpeningVacaniesWP" TypeName="*" />
       </SafeControls>
     </Assembly>
   </Assemblies>
   <TemplateFiles>
-    <TemplateFile Location="Layouts\DXC_OpeningFinal\AddNewJob.aspx" />
-    <TemplateFile Location="Layouts\DXC_OpeningFinal\AllJobs.aspx" />
-    <TemplateFile Location="Layouts\DXC_OpeningFinal\JobDetail.aspx" />
+    <TemplateFile Location="CONTROLTEMPLATES\DXC_OpeningFinal\OpeningVacaniesWP\OpeningVacaniesWPUserControl.ascx" />
+    <TemplateFile Location="Layouts\img\background-jobdetail.jpg" />
+    <TemplateFile Location="Layouts\img\error.png" />
+    <TemplateFile Location="Layouts\img\note.png" />
+    <TemplateFile Location="Layouts\page\AddNewJob.aspx" />
+    <TemplateFile Location="Layouts\page\AllJobs.aspx" />
+    <TemplateFile Location="Layouts\page\JobDetail.aspx" />
     <TemplateFile Location="Layouts\Style\CSS.css" />
-    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\AllJob.ascx" />
+    <TemplateFile Location="Layouts\Style\font-awesome-ie7.css" />
+    <TemplateFile Location="Layouts\Style\font-awesome-ie7.min.css" />
+    <TemplateFile Location="Layouts\Style\font-awesome.css" />
+    <TemplateFile Location="Layouts\Style\font-awesome.min.css" />
+    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx" />
     <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx" />
+    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_JobDetail.ascx" />
   </TemplateFiles>
   <FeatureManifests>
     <FeatureManifest Location="DXC_OpeningFinal_Feature1\Feature.xml" />

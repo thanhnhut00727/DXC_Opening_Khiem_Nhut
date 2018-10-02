@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9f8d513d-e1e3-4473-89cc-7fadf9f0843a" featureId="9f8d513d-e1e3-4473-89cc-7fadf9f0843a" imageUrl="" scope="Site" solutionId="00000000-0000-0000-0000-000000000000" title="DXC_OpeningFinal Feature1" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9f8d513d-e1e3-4473-89cc-7fadf9f0843a" alwaysForceInstall="true" featureId="9f8d513d-e1e3-4473-89cc-7fadf9f0843a" imageUrl="" scope="Site" solutionId="00000000-0000-0000-0000-000000000000" title="DXC_OpeningFinal Feature1" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
   <projectItems>
     <projectItemReference itemId="a853a57c-4054-4376-b435-00d1d445a518" />
     <projectItemReference itemId="536acd48-6887-44cd-b12c-7fd7cc41fcb1" />
@@ -11,6 +11,6 @@
     <projectItemReference itemId="a3ea1299-3e7e-4e38-a12e-ff7d65d2dd2c" />
     <projectItemReference itemId="1c627103-a42a-4542-9609-d6513ab76d18" />
     <projectItemReference itemId="08a4f1c9-b9a1-4a7a-87b7-57c6e28d8c28" />
-    <projectItemReference itemId="667b03bf-7ded-413b-8ad7-fbee5deefbb5" />
+    <projectItemReference itemId="0936fb94-d5f5-4d23-9646-94c5e14cefd2" />
   </projectItems>
 </feature>
