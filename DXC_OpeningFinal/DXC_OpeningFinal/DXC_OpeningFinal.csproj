@@ -41,6 +41,7 @@
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -57,13 +58,6 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx.cs">
-      <DependentUpon>Control_UpdateJob.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx.designer.cs">
-      <DependentUpon>Control_UpdateJob.ascx.cs</DependentUpon>
-    </Compile>
     <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx.cs">
       <DependentUpon>Control_AllJob.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -84,6 +78,13 @@
     </Compile>
     <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_JobDetail.ascx.designer.cs">
       <DependentUpon>Control_JobDetail.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx.cs">
+      <DependentUpon>Control_UpdateJob.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx.designer.cs">
+      <DependentUpon>Control_UpdateJob.ascx.cs</DependentUpon>
     </Compile>
     <Compile Include="Layouts\page\AddNewJob.aspx.cs">
       <DependentUpon>AddNewJob.aspx</DependentUpon>
@@ -200,8 +201,10 @@
     <Content Include="JobList\Elements.xml" />
     <Content Include="JobList\JobListInstance\Elements.xml" />
     <Content Include="JobList\Schema.xml" />
+    <Content Include="Layouts\img\clock.png" />
     <Content Include="Layouts\img\error.png" />
     <Content Include="Layouts\img\note.png" />
+    <Content Include="Layouts\img\success-icon.png" />
     <Content Include="Layouts\page\AddNewJob.aspx" />
     <Content Include="Layouts\page\AllJobs.aspx" />
     <Content Include="Layouts\page\JobDetail.aspx" />

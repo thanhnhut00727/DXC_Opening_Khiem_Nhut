@@ -25,9 +25,15 @@
                 <asp:Literal ID="p_jobtitle" runat="server"></asp:Literal>
             </p>
             <div class="date margin">
-                <asp:Label ID="lblpubDate" Text="" runat="server"></asp:Label>
+                <div style = "margin-right: 6px">
+                    <img width="20" height="20" src="/_layouts/15/img/clock.png" />
+                </div>
+                <div>
+                    <asp:Label ID="lblpubDate" Text="" runat="server"></asp:Label>
+                </div>
+                
             </div>
-        </div>
+        </div>    
         <p id="shortDes">
             <asp:Literal ID="p_shortDes" runat="server"></asp:Literal>
         </p>
@@ -41,15 +47,15 @@
             <asp:Literal ID="p_contact" runat="server"></asp:Literal>
         </p>
         <p id="status">
-            <asp:Literal ID="p_status" runat="server"></asp:Literal>
+            <asp:Label ID="jobstatus" runat="server" ></asp:Label>
+            <%--<asp:Literal ID="p_status" runat="server"></asp:Literal>--%>
         </p>
-
         <div id="editButton">
             <div>
                 <asp:LinkButton ID="btn_Update" runat="server" OnClick="btn_Update_Click">Update</asp:LinkButton>
             </div>
             <div>
-                <asp:LinkButton ID="btn_Delete" runat="server" OnClick="btn_Delete_Click">Delete</asp:LinkButton>
+                <asp:LinkButton ID="btn_Delete" runat="server" OnClick="btn_Delete_Click" OnClientClick="return confirm('Are you sure ???');">Delete</asp:LinkButton>
             </div>
             <div>
                 <asp:LinkButton ID="btn_Cancel" runat="server" OnClick="btn_Cancel_Click">Cancel</asp:LinkButton>

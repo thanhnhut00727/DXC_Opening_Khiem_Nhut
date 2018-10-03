@@ -77,7 +77,7 @@ namespace DXC_OpeningFinal.OpeningVacaniesWP
         {
             LinkButton lbtnID = sender as LinkButton;
             string sitecolURL = SPContext.Current.Web.Site.Url;
-            Response.Redirect(sitecolURL + "/_layouts/15/page/JobDetail.aspx?IDItem=" + lbtnID.CommandArgument);
+            Response.Redirect(sitecolURL + "/_layouts/15/page/JobDetail.aspx?ID=" + lbtnID.CommandArgument);
         }
 
     }

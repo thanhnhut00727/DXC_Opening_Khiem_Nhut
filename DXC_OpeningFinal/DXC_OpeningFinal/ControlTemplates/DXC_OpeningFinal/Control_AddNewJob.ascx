@@ -10,11 +10,6 @@
 <html lang="en">
 <head>
     <link href="/_layouts/15/Style/CSS.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
-        .auto-style1 {
-            width: 120px;
-        }
-    </style>
 </head>
 <body>
 
@@ -23,7 +18,12 @@
         </asp:SiteMapPath>
     </div>
     <div id="notification" runat="server" class="notification" visible="false">
-        <asp:Label ID="lblNotification" Text="" runat="server"></asp:Label>
+        <div style="margin-right: 6px">
+            <img src="/_layouts/15/img/success-icon.png" width="20" height="20" />
+        </div>
+        <div>
+            <asp:Label ID="lblNotification" Text="" runat="server"></asp:Label>
+        </div>
     </div>
 
     <div id="divContainer">
@@ -110,7 +110,7 @@
                 <asp:Button runat="server" Text="Add" ID="SaveButton" Height="28px" Width="90px" OnClick="SaveButton_Click" />
             </div>
             <div>
-                <asp:Button runat="server" Text="Cancel" ID="CancelButton" Height="28px" Width="90px" OnClick="CancelButton_Click" />
+                <asp:Button runat="server" Text="Cancel" ID="CancelButton" Height="28px" Width="90px" OnClick="CancelButton_Click" CausesValidation="false"/>
             </div>
         </div>
     </div>

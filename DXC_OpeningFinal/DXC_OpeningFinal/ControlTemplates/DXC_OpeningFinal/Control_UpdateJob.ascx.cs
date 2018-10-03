@@ -4,60 +4,83 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 
-namespace DXC_OpeningFinal.ControlTemplates
+namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
 {
-    public partial class Control_UpdateJob : UserControl
+    public partial class Control_Update : UserControl
     {
-
+        string IDItem;
         protected void Page_Load(object sender, EventArgs e)
-        {
-            if (!Page.IsPostBack)
+        {       
+            try
             {
-                SPWeb web = SPContext.Current.Web;
-                if (web != null)
+
+                if (!Page.IsPostBack)
                 {
-                    string ID = Request.QueryString["IDItem"];
-                    SPList list = web.Lists["JobList"];
-                    SPListItemCollection items = list.Items;
-                    //txtID.Text = idrequest;
+                    SPWeb web = SPContext.Current.Web;
+                    if (web != null)
+                    {
+                        IDItem = Request.QueryString["ID"];
+                        SPList list = web.Lists["JobList"];
+                        SPListItemCollection items = list.Items;
+                        //txtID.Text = idrequest;
 
-                    SPListItem item = items.GetItemById(int.Parse(ID));
-                    txtJobTitle.Text = item["_JobTitle"].ToString();
-                    txtShortDes.Text = item["ShortDescription"].ToString();
-                    txtLongDes.Text = item["LongDescription"].ToString();
-                    txtReferralBonus.Text = item["RefernalBonus"].ToString();
-                    txtHRContact.Text = item["HRContact"].ToString();
-                    txtStatus.Text = item["Status"].ToString();
-                    
-                }
+                        SPListItem item = items.GetItemById(int.Parse(IDItem));
+                        txtJobTitle.Text = item["_JobTitle"].ToString();
+                        txtShortDes.Text = item["ShortDescription"].ToString();
+                        txtLongDes.Text = setvalue(item["LongDescription"]).ToString();
+                        txtReferralBonus.Text = setvalue(item["RefernalBonus"]).ToString();
+                        txtHRContact.Text = item["HRContact"].ToString();
+                        txtStatus.Text = item["Status"].ToString();
+
+                    }
+                }             
+
             }
-
+            catch (Exception)
+            {
+                lblNotification.Text = "Sorry, can not found !";
+            }
         }
+
         protected void UpdateButton_Click(object sender, EventArgs e)
         {
-            string ID = Request.QueryString["IDItem"];
-            SPWeb web = SPContext.Current.Web;
-            web.AllowUnsafeUpdates = true;
-            SPList list = web.Lists["JobList"];
-            //SPListItemCollection items = list.Items;
-            SPListItem item = list.GetItemById(int.Parse(ID));
-            item["_JobTitle"] = txtJobTitle.Text;
-            item["ShortDescription"] = txtShortDes.Text;
-            item["LongDescription"] = txtJobTitle.Text;
-            item["LongDescription"] = txtLongDes.Text;
-            item["RefernalBonus"] = txtReferralBonus.Text;
-            item["HRContact"] = txtHRContact.Text;
-            item["Status"] = txtStatus.Text;
-            item.Update();
-            web.AllowUnsafeUpdates = false;
-
-            Response.Redirect("~/_layouts/15/page/AllJobs.aspx");
+            try
+            {
+                IDItem = Request.QueryString["ID"];
+                SPWeb web = SPContext.Current.Web;
+                web.AllowUnsafeUpdates = true;
+                SPList list = web.Lists["JobList"];
+                //SPListItemCollection items = list.Items;
+                SPListItem item = list.GetItemById(int.Parse(IDItem));
+                item["_JobTitle"] = txtJobTitle.Text;
+                item["ShortDescription"] = txtShortDes.Text;
+                item["LongDescription"] = txtJobTitle.Text;
+                item["LongDescription"] = txtLongDes.Text;
+                item["RefernalBonus"] = txtReferralBonus.Text;
+                item["HRContact"] = txtHRContact.Text;
+                item["Status"] = txtStatus.Text;
+                item.Update();
+                web.AllowUnsafeUpdates = false;
+                lblNotification.Text = "Update Job successfully";
+                notification.Visible = true;
+            }
+            catch (Exception)
+            {
+                lblNotification.Text = "Update Job failed !";
+            }
+            
+            
         }
 
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-
-        } 
-
+            Response.Redirect("/_layouts/15/page/AllJobs.aspx");
+        }
+        protected object setvalue(object value)
+        {
+            if (value == null)
+                return "";
+            return value;
+        }
     }
 }

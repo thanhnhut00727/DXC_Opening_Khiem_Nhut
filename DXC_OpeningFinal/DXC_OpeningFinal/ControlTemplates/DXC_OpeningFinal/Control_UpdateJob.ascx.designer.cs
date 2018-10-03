@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DXC_OpeningFinal.ControlTemplates {
+namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal {
     
     
-    public partial class Control_UpdateJob {
+    public partial class Control_Update {
         
         /// <summary>
         /// SiteMapPath1 control.
@@ -58,6 +58,15 @@ namespace DXC_OpeningFinal.ControlTemplates {
         protected global::System.Web.UI.WebControls.TextBox txtJobTitle;
         
         /// <summary>
+        /// vldJobTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vldJobTitle;
+        
+        /// <summary>
         /// lblShortDes control.
         /// </summary>
         /// <remarks>
@@ -74,6 +83,15 @@ namespace DXC_OpeningFinal.ControlTemplates {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtShortDes;
+        
+        /// <summary>
+        /// vldShortDes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vldShortDes;
         
         /// <summary>
         /// lblLongDes control.
@@ -112,6 +130,15 @@ namespace DXC_OpeningFinal.ControlTemplates {
         protected global::System.Web.UI.WebControls.TextBox txtReferralBonus;
         
         /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        
+        /// <summary>
         /// lblHRContact control.
         /// </summary>
         /// <remarks>
@@ -128,6 +155,15 @@ namespace DXC_OpeningFinal.ControlTemplates {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHRContact;
+        
+        /// <summary>
+        /// vldHRContact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vldHRContact;
         
         /// <summary>
         /// lblStatus control.

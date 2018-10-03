@@ -13,7 +13,7 @@ namespace DXC_OpeningFinal.Layouts.page {
     public partial class UpdateJob {
         
         /// <summary>
-        /// Control_UpdateJob control.
+        /// UpdateJob control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.

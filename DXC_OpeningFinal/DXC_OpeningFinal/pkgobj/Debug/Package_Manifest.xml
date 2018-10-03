@@ -10,8 +10,10 @@
   <TemplateFiles>
     <TemplateFile Location="CONTROLTEMPLATES\DXC_OpeningFinal\OpeningVacaniesWP\OpeningVacaniesWPUserControl.ascx" />
     <TemplateFile Location="Layouts\img\background-jobdetail.jpg" />
+    <TemplateFile Location="Layouts\img\clock.png" />
     <TemplateFile Location="Layouts\img\error.png" />
     <TemplateFile Location="Layouts\img\note.png" />
+    <TemplateFile Location="Layouts\img\success-icon.png" />
     <TemplateFile Location="Layouts\page\AddNewJob.aspx" />
     <TemplateFile Location="Layouts\page\AllJobs.aspx" />
     <TemplateFile Location="Layouts\page\JobDetail.aspx" />

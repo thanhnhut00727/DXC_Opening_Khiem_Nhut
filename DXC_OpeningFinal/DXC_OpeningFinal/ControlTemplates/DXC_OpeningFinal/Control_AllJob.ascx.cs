@@ -37,14 +37,14 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
             }
 
             DataTable dtEmp = col.GetDataTable();
-            int dtcount = dtEmp.Rows.Count;
+           
             PagedDataSource pgitems = new PagedDataSource();
             System.Data.DataView dv = new System.Data.DataView(dtEmp);
             pgitems.DataSource = dv;
             pgitems.AllowPaging = true;
             pgitems.PageSize = 4;
             pgitems.CurrentPageIndex = PageNumber;
-
+            int dtcount = pgitems.PageCount;
             if (pgitems.PageCount > 1)
             {
                 rptPages.Visible = true;
@@ -71,7 +71,11 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
                 }
             }
             else
+            {
                 rptPages.Visible = false;
+                lnkBtnNext.Visible = false;
+                lnkBtnPrev.Visible = false;
+            }               
             rptdatatable.DataSource = pgitems;
             rptdatatable.DataBind();
 
@@ -104,7 +108,7 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
         {
             LinkButton lbtnID = sender as LinkButton;
             string sitecolURL = SPContext.Current.Web.Site.Url;
-            Response.Redirect(sitecolURL + "/_layouts/15/page/JobDetail.aspx?IDItem=" + lbtnID.CommandArgument);
+            Response.Redirect(sitecolURL + "/_layouts/15/page/JobDetail.aspx?ID=" + lbtnID.CommandArgument);
         }
 
         protected void rptPages_ItemCommand(object source, RepeaterCommandEventArgs e)

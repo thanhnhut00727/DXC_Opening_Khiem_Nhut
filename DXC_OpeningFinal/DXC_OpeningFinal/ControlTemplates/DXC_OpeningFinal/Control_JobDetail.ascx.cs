@@ -10,6 +10,7 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
     
     public partial class Control_JobDetail : UserControl
     {
+        string IDItem;
         public static string TimeAgo(DateTime dateTime)
         {
             string result = string.Empty;
@@ -56,30 +57,39 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
             SPWeb web = SPContext.Current.Web;
             if (web != null)
             {
-                string ID = Request.QueryString["IDItem"];
+                IDItem = Request.QueryString["ID"];
                 SPList list = web.Lists["JobList"];
                 SPListItemCollection items = list.Items;
-                SPListItem item = items.GetItemById(int.Parse(ID));
+                SPListItem item = items.GetItemById(int.Parse(IDItem));
                 p_jobtitle.Text = item["_JobTitle"].ToString();
                 lblpubDate.Text = TimeAgo((DateTime)item["PubDate"]);
-                p_bonus.Text = item["RefernalBonus"].ToString();
+                p_bonus.Text = setvalue(item["RefernalBonus"]).ToString();
                 p_contact.Text = item["HRContact"].ToString();
                 p_shortDes.Text = item["ShortDescription"].ToString();
-                p_longDes.Text = item["LongDescription"].ToString();
-                p_status.Text = item["Status"].ToString();
-
-            }          
+                p_longDes.Text = setvalue(item["LongDescription"]).ToString();
+                jobstatus.Text = item["Status"].ToString();
+            }
+            if (jobstatus.Text == "Open")
+                jobstatus.CssClass = "statusOpen";
+            else if (jobstatus.Text == "Close")
+                jobstatus.CssClass = "statusClose";
+        }
+        protected object setvalue(object value)
+        {
+            if (value == null)
+                return "";
+            return value;
         }
         protected void btn_Delete_Click(object sender, EventArgs e)
         {
-            string ID = Request.QueryString["IDItem"];
+            IDItem = Request.QueryString["ID"];
             SPWeb oWeb = SPContext.Current.Web;
             //Get a Particular List  
             SPList oList = oWeb.Lists["JobList"];
-            SPListItem itemToDelete = oList.GetItemById(int.Parse(ID));
+            SPListItem itemToDelete = oList.GetItemById(int.Parse(IDItem));
             // SPListItem item = oList.Items;
             itemToDelete.Delete();
-            Response.Redirect("~/_layouts/15/page/AllJobs.aspx");
+            Response.Redirect("/_layouts/15/page/AllJobs.aspx");
         }
 
         protected void btn_Cancel_Click(object sender, EventArgs e)
@@ -89,10 +99,10 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
 
         protected void btn_Update_Click(object sender, EventArgs e)
         {
-            string ID = Request.QueryString["IDItem"];
+            IDItem = Request.QueryString["ID"];
             //LinkButton lbtnID = sender as LinkButton;
             string sitecolURL = SPContext.Current.Web.Site.Url;
-            Response.Redirect(sitecolURL + "/_layouts/15/page/UpdateJob.aspx?IDItem=" + ID);
+            Response.Redirect(sitecolURL + "/_layouts/15/page/UpdateJob.aspx?ID=" + IDItem);
         }
     }
 }

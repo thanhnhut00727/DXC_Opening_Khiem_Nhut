@@ -1,22 +1,16 @@
 ﻿<%@ Assembly Name="$SharePoint.Project.AssemblyFullName$" %>
 <%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Register Tagprefix="asp" Namespace="System.Web.UI" Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" %>
-<%@ Import Namespace="Microsoft.SharePoint" %> 
-<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Control_UpdateJob.ascx.cs" Inherits="DXC_OpeningFinal.ControlTemplates.Control_UpdateJob" %>
-
+<%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="asp" Namespace="System.Web.UI" Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" %>
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Control_UpdateJob.ascx.cs" Inherits="DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal.Control_Update" %>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <link href="/_layouts/15/Style/CSS.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
-        .auto-style1 {
-            width: 120px;
-        }
-    </style>
 </head>
 <body>
 
@@ -25,7 +19,12 @@
         </asp:SiteMapPath>
     </div>
     <div id="notification" runat="server" class="notification" visible="false">
-        <asp:Label ID="lblNotification" Text="" runat="server"></asp:Label>
+        <div style="margin-right: 6px">
+            <img src="/_layouts/15/img/success-icon.png" width="20" height="20" />
+        </div>
+        <div>
+            <asp:Label ID="lblNotification" Text="" runat="server"></asp:Label>
+        </div>
     </div>
 
     <div id="divContainer">
@@ -38,7 +37,12 @@
                 <td class="col2">
                     <asp:TextBox ID="txtJobTitle" runat="server" Width="98%"></asp:TextBox>
                 </td>
-               
+                <td class="col3">
+                    <asp:RequiredFieldValidator ID="vldJobTitle" runat="server"
+                        ControlToValidate="txtJobTitle"><img src="/_layouts/15/img/error.png" style="width:25px; height:25px" /></asp:RequiredFieldValidator>
+                </td>
+
+
             </tr>
 
             <%-- --Colum Short Description--%>
@@ -49,7 +53,11 @@
                 <td class="col2">
                     <asp:TextBox ID="txtShortDes" runat="server" Width="98%"></asp:TextBox>
                 </td>
-               
+                <td class="col3">
+                    <asp:RequiredFieldValidator ID="vldShortDes" runat="server"
+                        ControlToValidate="txtShortDes"><img src="/_layouts/15/img/error.png" style="width:25px; height:25px"/></asp:RequiredFieldValidator>
+                </td>
+
             </tr>
             <%-- -- Colum LongShort--%>
             <tr>
@@ -69,7 +77,11 @@
                 <td class="col2">
                     <asp:TextBox ID="txtReferralBonus" runat="server" Width="216px"></asp:TextBox>
                 </td>
-               
+                <td class="col3">
+                    <asp:RegularExpressionValidator ControlToValidate="txtReferralBonus" ValidationExpression="\d+" Display="Static" EnableClientScript="true"
+                        ID="RegularExpressionValidator1" runat="server" ErrorMessage="Referral must be number"></asp:RegularExpressionValidator>
+                </td>
+
             </tr>
             <%--  --- culunm HR Contact--%>
             <tr>
@@ -79,7 +91,10 @@
                 <td class="col2">
                     <asp:TextBox ID="txtHRContact" runat="server" Width="216px"></asp:TextBox>
                 </td>
-                
+                <td class="col3">
+                    <asp:RequiredFieldValidator ID="vldHRContact" runat="server"
+                        ControlToValidate="txtHRContact"><img src="/_layouts/15/img/error.png" style="width:25px; height:25px"/></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <%--  --- Colum Status--%>
             <tr>
@@ -100,10 +115,9 @@
                 <asp:Button runat="server" Text="Update" ID="UpdateButton" Height="28px" Width="90px" OnClick="UpdateButton_Click" />
             </div>
             <div>
-                <asp:Button runat="server" Text="Cancel" ID="CancelButton" Height="28px" Width="90px" OnClick="CancelButton_Click" />
+                <asp:Button runat="server" Text="Cancel" ID="CancelButton" Height="28px" Width="90px" OnClick="CancelButton_Click" CausesValidation="false"/>
             </div>
         </div>
     </div>
-
 </body>
 </html>
