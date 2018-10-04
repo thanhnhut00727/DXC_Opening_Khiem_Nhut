@@ -201,10 +201,12 @@
     <Content Include="JobList\Elements.xml" />
     <Content Include="JobList\JobListInstance\Elements.xml" />
     <Content Include="JobList\Schema.xml" />
-    <Content Include="Layouts\img\clock.png" />
     <Content Include="Layouts\img\error.png" />
+    <Content Include="Layouts\img\gift-icon.png" />
+    <Content Include="Layouts\img\hrcontact.png" />
     <Content Include="Layouts\img\note.png" />
     <Content Include="Layouts\img\success-icon.png" />
+    <Content Include="Layouts\img\time.png" />
     <Content Include="Layouts\page\AddNewJob.aspx" />
     <Content Include="Layouts\page\AllJobs.aspx" />
     <Content Include="Layouts\page\JobDetail.aspx" />

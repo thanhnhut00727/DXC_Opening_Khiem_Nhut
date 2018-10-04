@@ -40,6 +40,15 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal {
         protected global::System.Web.UI.WebControls.Label lblNotification;
         
         /// <summary>
+        /// clickhere control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink clickhere;
+        
+        /// <summary>
         /// lblJobtTitle control.
         /// </summary>
         /// <remarks>
@@ -200,5 +209,14 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button CancelButton;
+        
+        /// <summary>
+        /// addnew control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton addnew;
     }
 }

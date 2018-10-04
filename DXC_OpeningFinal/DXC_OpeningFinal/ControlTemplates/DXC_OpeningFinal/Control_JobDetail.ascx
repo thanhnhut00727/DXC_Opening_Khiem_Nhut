@@ -13,7 +13,7 @@
     <link href="/_layouts/15/Style/CSS.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    
+
     <div style="margin-bottom: 10px">
         <asp:SiteMapPath SiteMapProvider="CurrentNavSiteMapProviderNoEncode" ID="SiteMapPath1" SkipLinkText="" NodeStyle-CssClass="ms-sitemapdirectional" runat="server" RenderCurrentNodeAsLink="True">
             <NodeStyle CssClass="ms-sitemapdirectional" />
@@ -25,39 +25,53 @@
                 <asp:Literal ID="p_jobtitle" runat="server"></asp:Literal>
             </p>
             <div class="date margin">
-                <div style = "margin-right: 6px">
-                    <img width="20" height="20" src="/_layouts/15/img/clock.png" />
+                <div style="margin-right: 6px">
+                    <img width="20" height="20" src="/_layouts/15/img/time.png" />
                 </div>
                 <div>
                     <asp:Label ID="lblpubDate" Text="" runat="server"></asp:Label>
                 </div>
-                
+
             </div>
-        </div>    
+        </div>
         <p id="shortDes">
             <asp:Literal ID="p_shortDes" runat="server"></asp:Literal>
         </p>
         <p id="longDes">
             <asp:Literal ID="p_longDes" runat="server"></asp:Literal>
         </p>
-        <p id="bonus">
-            <asp:Literal ID="p_bonus" runat="server"></asp:Literal>
-        </p>
-        <p id="contact">
-            <asp:Literal ID="p_contact" runat="server"></asp:Literal>
-        </p>
+        <div id="bonus">
+            <div>
+                <img width="20" height="20" src="/_layouts/15/img/gift-icon.png" />
+            </div>
+            <div>Referral Bonus: </div>
+            <div>
+                <asp:Literal ID="p_bonus" runat="server"></asp:Literal>
+            </div>
+            <div>$</div>
+            
+        </div>
+        <div id="contact">
+            <div>
+                <img width="20" height="20" src="/_layouts/15/img/hrcontact.png" />
+            </div>
+            <div>HR Contact: </div>
+            <div>
+                <asp:Literal ID="p_contact" runat="server"></asp:Literal>
+            </div>
+        </div>
         <p id="status">
-            <asp:Label ID="jobstatus" runat="server" ></asp:Label>
+            <asp:Label ID="jobstatus" runat="server"></asp:Label>
             <%--<asp:Literal ID="p_status" runat="server"></asp:Literal>--%>
         </p>
         <div id="editButton">
-            <div class ="editbutton" runat="server" id="updatejob">
+            <div class="editbutton" runat="server" id="updatejob">
                 <asp:LinkButton ID="btn_Update" runat="server" OnClick="btn_Update_Click">Update</asp:LinkButton>
             </div>
-            <div class ="editbutton" runat="server" id="deletejob">
+            <div class="editbutton" runat="server" id="deletejob">
                 <asp:LinkButton ID="btn_Delete" runat="server" OnClick="btn_Delete_Click" OnClientClick="return confirm('Are you sure ???');">Delete</asp:LinkButton>
             </div>
-            <div class ="editbutton">
+            <div class="editbutton">
                 <asp:LinkButton ID="btn_Cancel" runat="server" OnClick="btn_Cancel_Click">Cancel</asp:LinkButton>
 
             </div>

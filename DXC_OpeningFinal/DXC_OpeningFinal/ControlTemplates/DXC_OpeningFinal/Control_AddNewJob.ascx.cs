@@ -10,21 +10,13 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
 {
     public partial class Control_AddNewJob : UserControl
     {
-        bool clicksave = false;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (IsPostBack == true && clicksave == true)
-            {
-                clicksave = false;
-                Response.Redirect("/_layouts/15/page/AddNewJob.aspx");
-            }
         }
-
         protected void SaveButton_Click(object sender, EventArgs e)
         {         
             try
             {
-                clicksave = true;
                 SPWeb web = SPContext.Current.Web;
                 if (web != null)
                 {
@@ -45,9 +37,8 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
                         newItem.Update();
                     }
                     web.AllowUnsafeUpdates = false;
-                }
-                
-                lblNotification.Text = "Add new job successfully";
+                }        
+                lblNotification.Text = "Add new job successfully. Back to see all job click ";
                 notification.Visible = true;
                 
             }
@@ -62,6 +53,11 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
         {
             
             Response.Redirect("/_layouts/15/page/AllJobs.aspx");
+        }
+
+        protected void addnew_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/_layouts/15/page/AddNewJob.aspx");
         }
     }
 }

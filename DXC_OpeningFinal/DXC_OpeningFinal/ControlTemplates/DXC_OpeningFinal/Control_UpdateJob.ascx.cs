@@ -32,6 +32,7 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
                         txtStatus.Text = item["Status"].ToString();
 
                     }
+                    
                 }             
 
             }
@@ -60,7 +61,7 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
                 item["Status"] = txtStatus.Text;
                 item.Update();
                 web.AllowUnsafeUpdates = false;
-                lblNotification.Text = "Update Job successfully";
+                lblNotification.Text = "Update job successfully. Back to see all job click ";
                 notification.Visible = true;
             }
             catch (Exception)

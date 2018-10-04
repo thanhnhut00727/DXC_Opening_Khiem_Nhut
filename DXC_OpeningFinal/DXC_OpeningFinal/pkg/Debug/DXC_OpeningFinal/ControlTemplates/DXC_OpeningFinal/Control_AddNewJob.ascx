@@ -22,7 +22,7 @@
             <img src="/_layouts/15/img/success-icon.png" width="20" height="20" />
         </div>
         <div>
-            <asp:Label ID="lblNotification" Text="" runat="server"></asp:Label>
+            <asp:Label ID="lblNotification" Text="" runat="server"></asp:Label><asp:HyperLink ID="clickhere" runat="server" NavigateUrl="/_layouts/15/page/AllJobs.aspx">here</asp:HyperLink>
         </div>
     </div>
 
@@ -107,14 +107,14 @@
         </table>
         <div id="submitButton">
             <div>
-                <asp:Button runat="server" Text="Add" ID="SaveButton" Height="28px" Width="90px" OnClick="SaveButton_Click" />
+                <asp:Button runat="server" Text="Add" ID="SaveButton" Height="28px" Width="90px" OnClick="SaveButton_Click" CssClass="editbutton"/>
             </div>
             <div>
-                <asp:Button runat="server" Text="Cancel" ID="CancelButton" Height="28px" Width="90px" OnClick="CancelButton_Click" CausesValidation="false"/>
+                <asp:Button runat="server" Text="Cancel" ID="CancelButton" Height="28px" Width="90px" OnClick="CancelButton_Click" CausesValidation="false" CssClass="editbutton"/>
             </div>
         </div>
     </div>
-
+    <asp:LinkButton ID="addnew" runat="server" OnClick="addnew_Click">Add New</asp:LinkButton>
 </body>
 </html>
 

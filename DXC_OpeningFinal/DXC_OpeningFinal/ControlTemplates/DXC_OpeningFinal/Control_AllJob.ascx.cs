@@ -32,7 +32,10 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            LoadData();
+            if (!IsPostBack)
+            {
+                LoadData();
+            }          
             try
             {
                 SPUser user = SPContext.Current.Web.CurrentUser;
