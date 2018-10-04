@@ -1,4 +1,5 @@
 ﻿using Microsoft.SharePoint;
+using Microsoft.SharePoint.Administration.Claims;
 using System;
 using System.Collections.Generic;
 using System.Web.UI;
@@ -8,7 +9,7 @@ using System.Web.UI.WebControls.WebParts;
 namespace DXC_OpeningFinal.OpeningVacaniesWP
 {
     public partial class OpeningVacaniesWPUserControl : UserControl
-    {        
+    {
         public static string TimeAgo(DateTime dateTime)
         {
             string result = string.Empty;
@@ -50,9 +51,49 @@ namespace DXC_OpeningFinal.OpeningVacaniesWP
 
             return result;
         }
-        protected void Page_Load(object sender, EventArgs e)
+        protected bool IsUserMemberOfGroup(SPUser user, string groupName)
         {
+            bool result = false;
+
+            if (!String.IsNullOrEmpty(groupName) && user != null)
+            {
+                foreach (SPGroup group in user.Groups)
+                {
+                    if (group.Name == groupName)
+                    {
+                        // found it
+                        result = true;
+                        break;
+                    }
+                }
+            }
+
+            return result;
+        }
+             
+        protected void Page_Load(object sender, EventArgs e)
+        {                   
             getData();
+            try
+            {
+                SPUser user = SPContext.Current.Web.CurrentUser;
+                SPClaimProviderManager mgr = SPClaimProviderManager.Local;
+                if (mgr != null)
+                {
+                    if (IsUserMemberOfGroup(user, "HR Group"))
+                    {
+                        LinkAddNew.Visible = true;
+                    }
+                    else if (IsUserMemberOfGroup(user, "User"))
+                    {
+                        LinkAddNew.Visible = false;
+                    }
+                }
+            }
+            catch (Exception)
+            {             
+             
+            }                    
         }
         protected void getData()
         {

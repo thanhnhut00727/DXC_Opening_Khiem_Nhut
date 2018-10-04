@@ -85,6 +85,15 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal {
         protected global::System.Web.UI.WebControls.Label jobstatus;
         
         /// <summary>
+        /// updatejob control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl updatejob;
+        
+        /// <summary>
         /// btn_Update control.
         /// </summary>
         /// <remarks>
@@ -92,6 +101,15 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton btn_Update;
+        
+        /// <summary>
+        /// deletejob control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl deletejob;
         
         /// <summary>
         /// btn_Delete control.

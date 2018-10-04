@@ -51,13 +51,13 @@
             <%--<asp:Literal ID="p_status" runat="server"></asp:Literal>--%>
         </p>
         <div id="editButton">
-            <div>
+            <div class ="editbutton" runat="server" id="updatejob">
                 <asp:LinkButton ID="btn_Update" runat="server" OnClick="btn_Update_Click">Update</asp:LinkButton>
             </div>
-            <div>
+            <div class ="editbutton" runat="server" id="deletejob">
                 <asp:LinkButton ID="btn_Delete" runat="server" OnClick="btn_Delete_Click" OnClientClick="return confirm('Are you sure ???');">Delete</asp:LinkButton>
             </div>
-            <div>
+            <div class ="editbutton">
                 <asp:LinkButton ID="btn_Cancel" runat="server" OnClick="btn_Cancel_Click">Cancel</asp:LinkButton>
 
             </div>

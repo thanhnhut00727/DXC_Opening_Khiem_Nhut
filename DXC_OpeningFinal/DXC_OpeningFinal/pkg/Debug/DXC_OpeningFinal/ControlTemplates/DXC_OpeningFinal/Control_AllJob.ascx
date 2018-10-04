@@ -13,6 +13,9 @@
     <link href="/_layouts/15/Style/CSS.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <asp:SiteMapPath SiteMapProvider="CurrentNavSiteMapProviderNoEncode" ID="SiteMapPath1" SkipLinkText="" NodeStyle-CssClass="ms-sitemapdirectional" runat="server" RenderCurrentNodeAsLink="True">
+        <NodeStyle CssClass="ms-sitemapdirectional" />
+    </asp:SiteMapPath>
     <asp:Repeater ID="rptdatatable" runat="server">
         <ItemTemplate>
             <div id="dataAllJob">
@@ -48,6 +51,9 @@
             <asp:LinkButton ID="lnkBtnNext" runat="server" OnClick="lnkBtnNext_Click">>></asp:LinkButton>
         </div>
     </div>
+    <span>
+        <asp:HyperLink ID="LinkAddNewJob2" runat="server" NavigateUrl="~/_layouts/15/page/AddNewJob.aspx">Add New</asp:HyperLink>
+    </span>
 </body>
 </html>
 

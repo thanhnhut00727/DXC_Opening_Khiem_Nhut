@@ -10,3 +10,8 @@ C:\Users\Administrator\Desktop\DXC_OpeningFinal_V2\DXC_OpeningFinal_V2\DXC_Openi
 C:\Users\Administrator\Desktop\DXC_OpeningFinal_V2\DXC_OpeningFinal_V2\DXC_OpeningFinal\DXC_OpeningFinal\bin\Debug\DXC_OpeningFinal.pdb
 C:\Users\Administrator\Desktop\DXC_OpeningFinal_V2\DXC_OpeningFinal_V2\DXC_OpeningFinal\DXC_OpeningFinal\obj\Debug\DXC_OpeningFinal.dll
 C:\Users\Administrator\Desktop\DXC_OpeningFinal_V2\DXC_OpeningFinal_V2\DXC_OpeningFinal\DXC_OpeningFinal\obj\Debug\DXC_OpeningFinal.pdb
+C:\Users\Administrator\Desktop\DXC_OpeningFinal\DXC_OpeningFinal\bin\Debug\DXC_OpeningFinal.dll
+C:\Users\Administrator\Desktop\DXC_OpeningFinal\DXC_OpeningFinal\bin\Debug\DXC_OpeningFinal.pdb
+C:\Users\Administrator\Desktop\DXC_OpeningFinal\DXC_OpeningFinal\obj\Debug\DXC_OpeningFinal.dll
+C:\Users\Administrator\Desktop\DXC_OpeningFinal\DXC_OpeningFinal\obj\Debug\DXC_OpeningFinal.pdb
+C:\Users\Administrator\Desktop\DXC_OpeningFinal\DXC_OpeningFinal\obj\Debug\DXC_OpeningFinal.csprojResolveAssemblyReference.cache

@@ -1,4 +1,5 @@
 ﻿using Microsoft.SharePoint;
+using Microsoft.SharePoint.Administration.Claims;
 using System;
 using System.Data;
 using System.Web.UI;
@@ -10,12 +11,48 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
 {
     public partial class AllJob : UserControl
     {
+        protected bool IsUserMemberOfGroup(SPUser user, string groupName)
+        {
+            bool result = false;
+
+            if (!String.IsNullOrEmpty(groupName) && user != null)
+            {
+                foreach (SPGroup group in user.Groups)
+                {
+                    if (group.Name == groupName)
+                    {
+                        // found it
+                        result = true;
+                        break;
+                    }
+                }
+            }
+
+            return result;
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            LoadData();
+            try
             {
-                LoadData();
-            }          
+                SPUser user = SPContext.Current.Web.CurrentUser;
+                SPClaimProviderManager mgr = SPClaimProviderManager.Local;
+                if (mgr != null)
+                {
+                    if (IsUserMemberOfGroup(user, "HR Group"))
+                    {
+                        LinkAddNewJob2.Visible = true;
+                    }
+                    else if (IsUserMemberOfGroup(user, "User"))
+                    {
+                        LinkAddNewJob2.Visible = false;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }  
             //LoadData();
             //========================================================            
         }

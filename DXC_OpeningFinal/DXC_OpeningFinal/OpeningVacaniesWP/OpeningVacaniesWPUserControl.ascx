@@ -13,7 +13,6 @@
     }
 </style>
 
-
 <h2 id="title">Opening Vacancies</h2>
 
 <table id="tableWP" class="display" width="100%">
@@ -21,12 +20,13 @@
         <asp:Repeater ID="rptdatatable" runat="server">
             <ItemTemplate>
                 <tr>
-                    <td>
+                    <td>                
                         <h2><%# DataBinder.Eval(Container.DataItem, "_JobTitle") %></h2>
                         <asp:Label CssClass="date" ID="lblDate" runat="server" Text='<%# TimeAgo((DateTime)Eval("PubDate")) %>'></asp:Label>
                     </td>
                     <td>
-                            <asp:LinkButton ID="lbtnReadmoreHome" runat="server" CommandArgument='<%# Eval("ID") %>' OnClick="Linkto">read more</asp:LinkButton>
+                        
+                        <asp:LinkButton ID="lbtnReadmoreHome" runat="server" CommandArgument='<%# Eval("ID") %>' OnClick="Linkto">read more</asp:LinkButton>
                     </td>
                 </tr>
             </ItemTemplate>

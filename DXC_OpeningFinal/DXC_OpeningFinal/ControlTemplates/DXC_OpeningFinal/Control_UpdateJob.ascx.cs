@@ -13,7 +13,6 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
         {       
             try
             {
-
                 if (!Page.IsPostBack)
                 {
                     SPWeb web = SPContext.Current.Web;

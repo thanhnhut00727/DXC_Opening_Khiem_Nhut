@@ -1,4 +1,5 @@
 ﻿using Microsoft.SharePoint;
+using Microsoft.SharePoint.Administration.Claims;
 using System;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -11,6 +12,25 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
     public partial class Control_JobDetail : UserControl
     {
         string IDItem;
+        protected bool IsUserMemberOfGroup(SPUser user, string groupName)
+        {
+            bool result = false;
+
+            if (!String.IsNullOrEmpty(groupName) && user != null)
+            {
+                foreach (SPGroup group in user.Groups)
+                {
+                    if (group.Name == groupName)
+                    {
+                        // found it
+                        result = true;
+                        break;
+                    }
+                }
+            }
+
+            return result;
+        }
         public static string TimeAgo(DateTime dateTime)
         {
             string result = string.Empty;
@@ -54,6 +74,33 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+            loaddata();
+            try
+            {
+                SPUser user = SPContext.Current.Web.CurrentUser;
+                SPClaimProviderManager mgr = SPClaimProviderManager.Local;
+                if (mgr != null)
+                {
+                    if (IsUserMemberOfGroup(user, "HR Group"))
+                    {
+                        deletejob.Visible = true;
+                        updatejob.Visible = true;
+                    }
+                    else if (IsUserMemberOfGroup(user, "User"))
+                    {
+                        deletejob.Visible = false;
+                        updatejob.Visible = false;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            } 
+        }
+        protected void loaddata()
+        {
+            
             SPWeb web = SPContext.Current.Web;
             if (web != null)
             {

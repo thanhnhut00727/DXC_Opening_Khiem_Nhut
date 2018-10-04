@@ -13,6 +13,15 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal {
     public partial class AllJob {
         
         /// <summary>
+        /// SiteMapPath1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SiteMapPath SiteMapPath1;
+        
+        /// <summary>
         /// rptdatatable control.
         /// </summary>
         /// <remarks>
@@ -47,5 +56,14 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lnkBtnNext;
+        
+        /// <summary>
+        /// LinkAddNewJob2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink LinkAddNewJob2;
     }
 }
