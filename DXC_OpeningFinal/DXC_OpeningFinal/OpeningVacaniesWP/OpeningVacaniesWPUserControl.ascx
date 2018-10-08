@@ -32,10 +32,10 @@
     </div>
     <div class="Hyperlink">
         <div>
-            <asp:HyperLink ID="LinkAllJob" runat="server" NavigateUrl="/_layouts/15/page/AllJobs.aspx">All Job Opportunities</asp:HyperLink>
+            <asp:HyperLink ID="LinkAllJob" runat="server">All Job Opportunities</asp:HyperLink>
         </div>
         <div>
-            <asp:HyperLink CssClass="hyperlinkAddnew" ID="LinkAddNew" runat="server" NavigateUrl="/_layouts/15/page/AddNewJob.aspx">Add New</asp:HyperLink>
+            <asp:HyperLink CssClass="hyperlinkAddnew" ID="LinkAddNew" runat="server">Add New</asp:HyperLink>
         </div>
     </div>
 </div>

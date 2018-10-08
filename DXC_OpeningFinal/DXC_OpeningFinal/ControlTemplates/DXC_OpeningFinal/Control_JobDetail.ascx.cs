@@ -136,19 +136,20 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
             SPListItem itemToDelete = oList.GetItemById(int.Parse(IDItem));
             // SPListItem item = oList.Items;
             itemToDelete.Delete();
-            Response.Redirect("/_layouts/15/page/AllJobs.aspx");
+            Response.Redirect(SPContext.Current.Web.Url + "/_layouts/15/page/AllJobs.aspx");
         }
 
         protected void btn_Cancel_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/_layouts/15/page/AllJobs.aspx");
+            Response.Redirect(SPContext.Current.Web.Url + "/_layouts/15/page/AllJobs.aspx");
         }
 
         protected void btn_Update_Click(object sender, EventArgs e)
         {
             IDItem = Request.QueryString["ID"];
             //LinkButton lbtnID = sender as LinkButton;
-            string sitecolURL = SPContext.Current.Web.Site.Url;
+            //string sitecolURL = SPContext.Current.Web.Site.Url;
+            string sitecolURL = SPContext.Current.Web.Url;
             Response.Redirect(sitecolURL + "/_layouts/15/page/UpdateJob.aspx?ID=" + IDItem);
         }
     }

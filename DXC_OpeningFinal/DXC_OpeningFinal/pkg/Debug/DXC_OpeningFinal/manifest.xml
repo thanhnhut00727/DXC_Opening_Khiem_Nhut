@@ -28,5 +28,6 @@
   </TemplateFiles>
   <FeatureManifests>
     <FeatureManifest Location="DXC_OpeningFinal_Feature1\Feature.xml" />
+    <FeatureManifest Location="DXC_OpeningFinal_Feature2\Feature.xml" />
   </FeatureManifests>
 </Solution>

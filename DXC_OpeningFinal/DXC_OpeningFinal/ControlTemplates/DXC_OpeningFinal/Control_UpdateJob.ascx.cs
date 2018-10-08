@@ -10,7 +10,8 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
     {
         string IDItem;
         protected void Page_Load(object sender, EventArgs e)
-        {       
+        {
+            clickhere.NavigateUrl = SPContext.Current.Web.Url + "/_layouts/15/page/AllJobs.aspx";
             try
             {
                 if (!Page.IsPostBack)
@@ -74,7 +75,7 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
 
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/_layouts/15/page/AllJobs.aspx");
+            Response.Redirect(SPContext.Current.Web.Url + "/_layouts/15/page/AllJobs.aspx");
         }
         protected object setvalue(object value)
         {

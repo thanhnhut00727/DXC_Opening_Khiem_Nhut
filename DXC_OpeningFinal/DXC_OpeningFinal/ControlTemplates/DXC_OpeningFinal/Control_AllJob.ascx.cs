@@ -2,6 +2,7 @@
 using Microsoft.SharePoint.Administration.Claims;
 using System;
 using System.Data;
+using System.Web;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
@@ -32,10 +33,9 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                LoadData();
-            }          
+            LinkAddNewJob2.NavigateUrl = SPContext.Current.Web.Url + "/_layouts/15/page/AddNewJob.aspx";
+            LoadData();
+      
             try
             {
                 SPUser user = SPContext.Current.Web.CurrentUser;
@@ -147,7 +147,8 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
         protected void Linkto(object sender, EventArgs e)
         {
             LinkButton lbtnID = sender as LinkButton;
-            string sitecolURL = SPContext.Current.Web.Site.Url;
+            //string sitecolURL = SPContext.Current.Web.Site.Url;
+            string sitecolURL = SPContext.Current.Web.Url;
             Response.Redirect(sitecolURL + "/_layouts/15/page/JobDetail.aspx?ID=" + lbtnID.CommandArgument);
         }
 

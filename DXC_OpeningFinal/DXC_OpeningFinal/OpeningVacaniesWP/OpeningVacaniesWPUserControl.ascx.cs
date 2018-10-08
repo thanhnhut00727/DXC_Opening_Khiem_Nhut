@@ -2,6 +2,7 @@
 using Microsoft.SharePoint.Administration.Claims;
 using System;
 using System.Collections.Generic;
+using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
@@ -72,7 +73,9 @@ namespace DXC_OpeningFinal.OpeningVacaniesWP
         }
              
         protected void Page_Load(object sender, EventArgs e)
-        {                   
+        {
+            LinkAllJob.NavigateUrl = SPContext.Current.Web.Url + "/_layouts/15/page/AllJobs.aspx";
+            LinkAddNew.NavigateUrl = SPContext.Current.Web.Url + "/_layouts/15/page/AddNewJob.aspx";
             getData();
             try
             {
@@ -117,7 +120,8 @@ namespace DXC_OpeningFinal.OpeningVacaniesWP
         protected void Linkto(object sender, EventArgs e)
         {
             LinkButton lbtnID = sender as LinkButton;
-            string sitecolURL = SPContext.Current.Web.Site.Url;
+            //string sitecolURL = SPContext.Current.Web.Site.Url;
+            string sitecolURL = SPContext.Current.Web.Url;
             Response.Redirect(sitecolURL + "/_layouts/15/page/JobDetail.aspx?ID=" + lbtnID.CommandArgument);
         }
 

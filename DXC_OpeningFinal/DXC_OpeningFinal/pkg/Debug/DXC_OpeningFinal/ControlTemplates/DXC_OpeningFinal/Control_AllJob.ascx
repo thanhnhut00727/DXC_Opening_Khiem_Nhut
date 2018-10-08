@@ -52,7 +52,7 @@
         </div>
     </div>
     <span>
-        <asp:HyperLink ID="LinkAddNewJob2" runat="server" NavigateUrl="~/_layouts/15/page/AddNewJob.aspx">Add New</asp:HyperLink>
+        <asp:HyperLink ID="LinkAddNewJob2" runat="server">Add New</asp:HyperLink>
     </span>
 </body>
 </html>

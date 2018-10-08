@@ -12,6 +12,7 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            clickhere.NavigateUrl = SPContext.Current.Web.Url + "/_layouts/15/page/AllJobs.aspx";
         }
         protected void SaveButton_Click(object sender, EventArgs e)
         {         
@@ -51,13 +52,13 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
 
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            
-            Response.Redirect("/_layouts/15/page/AllJobs.aspx");
+
+            Response.Redirect(SPContext.Current.Web.Url + "/_layouts/15/page/AllJobs.aspx");
         }
 
         protected void addnew_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/_layouts/15/page/AddNewJob.aspx");
+            Response.Redirect(SPContext.Current.Web.Url + "/_layouts/15/page/AddNewJob.aspx");
         }
     }
 }

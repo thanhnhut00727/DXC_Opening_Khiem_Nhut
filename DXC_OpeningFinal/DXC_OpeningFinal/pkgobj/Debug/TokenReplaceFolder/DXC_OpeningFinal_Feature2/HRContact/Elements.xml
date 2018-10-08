@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{104bcb23-572f-496a-861d-7e86a2c50772}"
+       Name="HRContact"
+       DisplayName="HR Contact"
+       Type="Text"
+       MaxLength="50"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

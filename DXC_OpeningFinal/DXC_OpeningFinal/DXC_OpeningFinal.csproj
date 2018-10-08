@@ -131,6 +131,9 @@
     <None Include="Features\Feature1\Feature1.feature">
       <FeatureId>{83f49656-8dee-49aa-88a5-63e4bca48113}</FeatureId>
     </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{ef4de8f6-8637-438b-9d13-c0d69f5c7733}</FeatureId>
+    </None>
     <None Include="JobContentType\HRContact\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{55b0b82b-b3e6-4894-be00-80a93c00482a}</SharePointProjectItemId>
     </None>
@@ -181,6 +184,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx" />
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
     <Content Include="Layouts\img\background-jobdetail.jpg" />
     <Content Include="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx" />
     <Content Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx" />

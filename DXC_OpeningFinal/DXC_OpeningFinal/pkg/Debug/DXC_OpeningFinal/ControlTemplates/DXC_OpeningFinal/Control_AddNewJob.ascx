@@ -22,7 +22,7 @@
             <img src="/_layouts/15/img/success-icon.png" width="20" height="20" />
         </div>
         <div>
-            <asp:Label ID="lblNotification" Text="" runat="server"></asp:Label><asp:HyperLink ID="clickhere" runat="server" NavigateUrl="/_layouts/15/page/AllJobs.aspx">here</asp:HyperLink>
+            <asp:Label ID="lblNotification" Text="" runat="server"></asp:Label><asp:HyperLink ID="clickhere" runat="server">here</asp:HyperLink>
         </div>
     </div>
 
