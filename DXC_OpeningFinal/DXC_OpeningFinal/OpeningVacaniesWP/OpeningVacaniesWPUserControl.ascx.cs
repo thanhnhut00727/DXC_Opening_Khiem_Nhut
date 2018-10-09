@@ -98,6 +98,9 @@ namespace DXC_OpeningFinal.OpeningVacaniesWP
              
             }                    
         }
+        /// <summary>
+        /// Load Data
+        /// </summary>
         protected void getData()
         {
             SPWeb web = SPContext.Current.Web;
@@ -117,6 +120,11 @@ namespace DXC_OpeningFinal.OpeningVacaniesWP
             rptdatatable.DataSource = listItems.GetDataTable();
             rptdatatable.DataBind();
         }
+        /// <summary>
+        /// lollllllllllllllllllllll
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void Linkto(object sender, EventArgs e)
         {
             LinkButton lbtnID = sender as LinkButton;

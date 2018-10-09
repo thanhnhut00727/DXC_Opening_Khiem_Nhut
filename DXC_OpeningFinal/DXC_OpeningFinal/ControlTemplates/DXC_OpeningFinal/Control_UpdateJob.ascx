@@ -13,11 +13,6 @@
     <link href="/_layouts/15/Style/CSS.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
-    <div style="margin-bottom: 10px">
-        <asp:SiteMapPath PathSeparator="" SiteMapProvider="CurrentNavSiteMapProviderNoEncode" ID="SiteMapPath1" SkipLinkText="" NodeStyle-CssClass="ms-sitemapdirectional" runat="server" RenderCurrentNodeAsLink="True">
-        </asp:SiteMapPath>
-    </div>
     <div id="notification" runat="server" class="notification" visible="false">
         <div style="margin-right: 6px">
             <img src="/_layouts/15/img/success-icon.png" width="20" height="20" />
@@ -35,7 +30,7 @@
                     <asp:Label ID="lblJobtTitle" runat="server">Job Title :</asp:Label>
                 </td>
                 <td class="col2">
-                    <asp:TextBox ID="txtJobTitle" runat="server" Width="98%"></asp:TextBox>
+                    <asp:TextBox ID="txtJobTitle" runat="server" MaxLength="20" Width="98%"></asp:TextBox>
                 </td>
                 <td class="col3">
                     <asp:RequiredFieldValidator ID="vldJobTitle" runat="server"
@@ -51,7 +46,7 @@
                     <asp:Label ID="lblShortDes" runat="server">Short Description :</asp:Label>
                 </td>
                 <td class="col2">
-                    <asp:TextBox ID="txtShortDes" runat="server" Width="98%"></asp:TextBox>
+                    <asp:TextBox ID="txtShortDes" runat="server" MaxLength="50" Width="98%"></asp:TextBox>
                 </td>
                 <td class="col3">
                     <asp:RequiredFieldValidator ID="vldShortDes" runat="server"
@@ -65,7 +60,7 @@
                     <asp:Label ID="lblLongDes" runat="server">Long DesCription :</asp:Label>
                 </td>
                 <td class="col2">
-                    <asp:TextBox ID="txtLongDes" runat="server" TextMode="MultiLine" Rows="9" Width="98%"></asp:TextBox>
+                    <asp:TextBox ID="txtLongDes" runat="server" MaxLength="500" TextMode="MultiLine" Rows="9" Width="98%"></asp:TextBox>
                 </td>
             </tr>
 
@@ -89,7 +84,7 @@
                     <asp:Label ID="lblHRContact" runat="server">HR Contact :</asp:Label>
                 </td>
                 <td class="col2">
-                    <asp:TextBox ID="txtHRContact" runat="server" Width="216px"></asp:TextBox>
+                    <asp:TextBox ID="txtHRContact" runat="server" MaxLength="50" Width="216px"></asp:TextBox>
                 </td>
                 <td class="col3">
                     <asp:RequiredFieldValidator ID="vldHRContact" runat="server"
@@ -110,12 +105,12 @@
 
             </tr>
         </table>
-        <div id="submitButton">
-            <div>
-                <asp:Button runat="server" Text="Update" ID="UpdateButton" Height="28px" Width="90px" OnClick="UpdateButton_Click" CssClass="editbutton" />
+        <div class="submitButton">
+            <div class="save">
+                <asp:Button runat="server" Text="Update" ID="UpdateButton" OnClick="UpdateButton_Click" CssClass="editbutton" />
             </div>
-            <div>
-                <asp:Button runat="server" Text="Cancel" ID="CancelButton" Height="28px" Width="90px" OnClick="CancelButton_Click" CausesValidation="false" CssClass="editbutton"/>
+            <div class="cancel">
+                <asp:Button runat="server" Text="Cancel" OnClientClick="return confirm('Are you sure ???');" ID="CancelButton" OnClick="CancelButton_Click" CausesValidation="false" CssClass="editbutton"/>
             </div>
         </div>
     </div>

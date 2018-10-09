@@ -1,5 +1,6 @@
 ﻿.col3 {
     width: auto;
+    color: red;
 }
 
 .stamp {
@@ -11,10 +12,15 @@
     font-family: 'Courier';
     width: 120px;
 }
-
+#jobtitle{
+    width: 75%;
+    white-space: nowrap;
+}
 #jobtitle h2 {
     font-weight: 500;
     color: #50a8e5;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .Close {
@@ -91,8 +97,10 @@
 
 #OpeningWP {
     padding: 10px;
+    width: 100%;
     border: 1px solid;
     border-radius: 0 0 10px 10px;
+    box-sizing:border-box;
 }
 
 #dataOpening-item {
@@ -102,7 +110,7 @@
     height: 0;
 }
 #dataOpening-readmore a {
-    margin-left: 28em;
+    margin-left: 70%;
     background: #be3b3b;
     top: -2.4em;
     color: white;
@@ -141,10 +149,11 @@
 
 #title {
     color: white;
-    padding: 5px;
+    border-radius: 10px 10px 0 0;
+    padding: 12px;
     margin-bottom: 5px;
     border: 1px solid;
-    background: #3b5998;
+    background: linear-gradient(#50a8e5, #3b5998);
     font-weight: bold;
 }
 
@@ -164,6 +173,8 @@
         font-weight: bold;
         color: black;
         margin: 0;
+        width: 80%;
+        word-break: break-all;
     }
 
 #editButton {
@@ -224,6 +235,8 @@
     padding: 10px;
     background-image: url(/_layouts/15/img/background-jobdetail.jpg);
     width: 90%;
+    margin-bottom: 2em;
+    border-radius: 6px;
 }
 
     #divContainer table {
@@ -234,7 +247,7 @@
             margin-bottom: 15px;
         }
 
-#submitButton {
+.submitButton {
     margin: 20px 0 10px 0;
     width: 660px;
     display: flex;
@@ -297,4 +310,40 @@
     top: 53px;
     font-weight: bold;
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}
+.save input{
+    width: 90px;
+    color: white;
+    font-size: 17px;
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+    background: linear-gradient(#50a8e5, #3b5998);
+}
+.save input:hover{
+    background: linear-gradient(#3b5998, #3b5998);
+    box-shadow: 2px 2px white;
+}
+.cancel input{
+    background: linear-gradient(#d23, #be3b3b);
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
+    width: 90px;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+}
+.cancel input:hover{
+    background: linear-gradient(#be3b3b, #be3b3b);
+    box-shadow: 2px 2px white;
+}
+#dataOpening-title{
+    width:45%;
+    white-space: nowrap;
+}
+#dataOpening-title h2{
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

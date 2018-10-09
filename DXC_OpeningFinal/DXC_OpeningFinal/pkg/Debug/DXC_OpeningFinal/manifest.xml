@@ -14,7 +14,6 @@
     <TemplateFile Location="Layouts\img\gift-icon.png" />
     <TemplateFile Location="Layouts\img\hrcontact.png" />
     <TemplateFile Location="Layouts\img\note.png" />
-    <TemplateFile Location="Layouts\img\success-icon.png" />
     <TemplateFile Location="Layouts\img\time.png" />
     <TemplateFile Location="Layouts\page\AddNewJob.aspx" />
     <TemplateFile Location="Layouts\page\AllJobs.aspx" />

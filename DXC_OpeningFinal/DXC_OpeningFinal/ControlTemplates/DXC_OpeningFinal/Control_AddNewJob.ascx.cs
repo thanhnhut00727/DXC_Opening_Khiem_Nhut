@@ -38,21 +38,25 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
                         newItem.Update();
                     }
                     web.AllowUnsafeUpdates = false;
-                }        
-                lblNotification.Text = "Add new job successfully. Back to see all job click ";
-                notification.Visible = true;
+                }                      
+                Response.Redirect(SPContext.Current.Web.Url + "/_layouts/15/page/AllJobs.aspx");
                 
             }
             catch (Exception)
             {
+                notification.Visible = true;
                 lblNotification.Text = "Sorry, can not found !";
             }
             
         }
 
+        /// <summary>
+        /// Dasd
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-
             Response.Redirect(SPContext.Current.Web.Url + "/_layouts/15/page/AllJobs.aspx");
         }
 

@@ -62,11 +62,11 @@ namespace DXC_OpeningFinal.ControlTemplates.DXC_OpeningFinal
                 item["Status"] = txtStatus.Text;
                 item.Update();
                 web.AllowUnsafeUpdates = false;
-                lblNotification.Text = "Update job successfully. Back to see all job click ";
-                notification.Visible = true;
+                Response.Redirect(SPContext.Current.Web.Url + "/_layouts/15/page/JobDetail.aspx?ID=" + IDItem);             
             }
             catch (Exception)
             {
+                notification.Visible = true;
                 lblNotification.Text = "Update Job failed !";
             }
             
