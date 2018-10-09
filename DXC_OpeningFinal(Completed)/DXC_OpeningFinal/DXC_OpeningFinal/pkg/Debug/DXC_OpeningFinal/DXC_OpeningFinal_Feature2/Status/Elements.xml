@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{659a8a9f-2e19-4251-814f-5cd80f35128c}"
+       Name="Status"
+       DisplayName="Status"
+       Type="Choice"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <Default>Open</Default>
+    <CHOICES>
+      <CHOICE>Open</CHOICE>
+      <CHOICE>Close</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

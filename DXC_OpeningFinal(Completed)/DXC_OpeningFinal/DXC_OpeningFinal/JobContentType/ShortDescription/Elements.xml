@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{80cd7115-55a1-4abf-9bac-f85eaae67dd0}"
+       Name="ShortDescription"
+       DisplayName="Short Description"
+       Type="Text"
+       Required="FALSE"
+       MaxLength="50"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

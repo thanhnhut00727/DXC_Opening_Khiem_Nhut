@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010051FF077B9A1840008E0DFA658B93FC7A" Name="JobContentType" Group="Opening Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{02b0de2f-0992-4be2-8648-666a7a0860bd}" DisplayName="_Job Title" Required="TRUE" Name="_JobTitle" />
+      <FieldRef ID="{80cd7115-55a1-4abf-9bac-f85eaae67dd0}" DisplayName="Short Description" Required="FALSE" Name="ShortDescription" />
+      <FieldRef ID="{509947e5-427f-4238-bca2-a17046518e59}" DisplayName="Long Description" Required="FALSE" Name="LongDescription" />
+      <FieldRef ID="{9780976d-295a-4338-aaa3-b1eeb73c4b1c}" DisplayName="Refernal Bonus" Required="FALSE" Name="RefernalBonus" />
+      <FieldRef ID="{104bcb23-572f-496a-861d-7e86a2c50772}" DisplayName="HR Contact" Required="FALSE" Name="HRContact" />
+      <FieldRef ID="{659a8a9f-2e19-4251-814f-5cd80f35128c}" DisplayName="Status" Required="FALSE" Name="Status" />
+      <FieldRef ID="{2051bbf4-774f-45b4-abbe-69404ccf6370}" DisplayName="Pub Date" Required="FALSE" Name="PubDate" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

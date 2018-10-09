@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFAE7C19-C719-42E0-9E7D-CBB2F91FFB75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DXC_OpeningFinal</RootNamespace>
+    <AssemblyName>DXC_OpeningFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx.cs">
+      <DependentUpon>Control_AllJob.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx.designer.cs">
+      <DependentUpon>Control_AllJob.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx.cs">
+      <DependentUpon>Control_AddNewJob.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx.designer.cs">
+      <DependentUpon>Control_AddNewJob.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_JobDetail.ascx.cs">
+      <DependentUpon>Control_JobDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_JobDetail.ascx.designer.cs">
+      <DependentUpon>Control_JobDetail.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx.cs">
+      <DependentUpon>Control_UpdateJob.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx.designer.cs">
+      <DependentUpon>Control_UpdateJob.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\page\AddNewJob.aspx.cs">
+      <DependentUpon>AddNewJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\page\AddNewJob.aspx.designer.cs">
+      <DependentUpon>AddNewJob.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\page\AllJobs.aspx.cs">
+      <DependentUpon>AllJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\page\AllJobs.aspx.designer.cs">
+      <DependentUpon>AllJobs.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\page\JobDetail.aspx.cs">
+      <DependentUpon>JobDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\page\JobDetail.aspx.designer.cs">
+      <DependentUpon>JobDetail.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\page\UpdateJob.aspx.cs">
+      <DependentUpon>UpdateJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\page\UpdateJob.aspx.designer.cs">
+      <DependentUpon>UpdateJob.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpeningVacaniesWP\OpeningVacaniesWP.cs" />
+    <Compile Include="OpeningVacaniesWP\OpeningVacaniesWPUserControl.ascx.cs">
+      <DependentUpon>OpeningVacaniesWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OpeningVacaniesWP\OpeningVacaniesWPUserControl.ascx.designer.cs">
+      <DependentUpon>OpeningVacaniesWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c29cda28-0b72-44fe-9a5c-cb061042db27}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{83f49656-8dee-49aa-88a5-63e4bca48113}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{ef4de8f6-8637-438b-9d13-c0d69f5c7733}</FeatureId>
+    </None>
+    <None Include="JobContentType\HRContact\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{55b0b82b-b3e6-4894-be00-80a93c00482a}</SharePointProjectItemId>
+    </None>
+    <None Include="JobContentType\LongDescription\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c089b85d-b1ab-44a0-9c32-152f0119bb41}</SharePointProjectItemId>
+    </None>
+    <None Include="JobContentType\PubDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a3ea1299-3e7e-4e38-a12e-ff7d65d2dd2c}</SharePointProjectItemId>
+    </None>
+    <None Include="JobContentType\RefernalBonus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{91d46df4-fe9a-469e-b59e-8596b11fe0e4}</SharePointProjectItemId>
+    </None>
+    <None Include="JobContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a853a57c-4054-4376-b435-00d1d445a518}</SharePointProjectItemId>
+    </None>
+    <None Include="JobContentType\ShortDescription\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{16447034-f3bf-4071-abb4-bc25437dd15c}</SharePointProjectItemId>
+    </None>
+    <None Include="JobContentType\Status\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81132cbb-f286-468f-b368-467e62356f13}</SharePointProjectItemId>
+    </None>
+    <None Include="JobContentType\_JobTitle\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{536acd48-6887-44cd-b12c-7fd7cc41fcb1}</SharePointProjectItemId>
+    </None>
+    <None Include="JobList\JobListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1c627103-a42a-4542-9609-d6513ab76d18}</SharePointProjectItemId>
+    </None>
+    <None Include="JobList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{08a4f1c9-b9a1-4a7a-87b7-57c6e28d8c28}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c09ce8b1-403a-494b-a426-2e416be88afd}</SharePointProjectItemId>
+    </None>
+    <None Include="OpeningVacaniesWP\OpeningVacaniesWP.webpart" />
+    <None Include="OpeningVacaniesWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0936fb94-d5f5-4d23-9646-94c5e14cefd2}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{7870a203-c34e-40c6-a059-b3e111320fb7}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx" />
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\img\background-jobdetail.jpg" />
+    <Content Include="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx" />
+    <Content Include="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx" />
+    <Content Include="ControlTemplates\DXC_OpeningFinal\Control_JobDetail.ascx" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="JobContentType\Elements.xml" />
+    <Content Include="JobContentType\HRContact\Elements.xml" />
+    <Content Include="JobContentType\LongDescription\Elements.xml" />
+    <Content Include="JobContentType\PubDate\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="JobContentType\RefernalBonus\Elements.xml" />
+    <Content Include="JobContentType\ShortDescription\Elements.xml" />
+    <Content Include="JobContentType\Status\Elements.xml" />
+    <Content Include="JobContentType\_JobTitle\Elements.xml" />
+    <Content Include="JobList\Elements.xml" />
+    <Content Include="JobList\JobListInstance\Elements.xml" />
+    <Content Include="JobList\Schema.xml" />
+    <Content Include="Layouts\img\error.png" />
+    <Content Include="Layouts\img\gift-icon.png" />
+    <Content Include="Layouts\img\hrcontact.png" />
+    <Content Include="Layouts\img\note.png" />
+    <Content Include="Layouts\img\time.png" />
+    <Content Include="Layouts\page\AddNewJob.aspx" />
+    <Content Include="Layouts\page\AllJobs.aspx" />
+    <Content Include="Layouts\page\JobDetail.aspx" />
+    <Content Include="Layouts\page\UpdateJob.aspx" />
+    <Content Include="Layouts\Style\CSS.css" />
+    <Content Include="OpeningVacaniesWP\Elements.xml" />
+    <Content Include="OpeningVacaniesWP\OpeningVacaniesWPUserControl.ascx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

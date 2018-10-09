@@ -1,0 +1,349 @@
+﻿.col3 {
+    width: auto;
+    color: red;
+}
+
+.stamp {
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Courier';
+    width: 120px;
+}
+#jobtitle{
+    width: 75%;
+    white-space: nowrap;
+}
+#jobtitle h2 {
+    font-weight: 500;
+    color: #50a8e5;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.Close {
+    padding: 5px;
+    color: #d23;
+    left: 80%;
+    position: absolute;
+    top: 24px;
+    border: 0.5rem double #D23;
+    transform: rotate(25deg);
+    font-size: 2em;
+    text-align: center;
+}
+
+.Open {
+    padding: 5px;
+    color: green;
+    left: 80%;
+    position: absolute;
+    top: 24px;
+    border: 0.5rem double green;
+    transform: rotate(25deg);
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.pagination {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.pagination_1 {
+    border: 1px solid #ddd;
+    padding: 3px 8px;
+    display: inline-block;
+    color: black;
+    float: left;
+    text-decoration: none;
+    transition: background-color .3s;
+    margin: 0 8px;
+}
+
+    .pagination_1:hover {
+        background: #ddd;
+    }
+
+.pagination span.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.Hyperlink {
+    display: flex;
+    margin-top: 20px;
+}
+
+.hyperlinkAddnew {
+    margin-left: 20px;
+}
+
+#dataAllJob {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cceaff;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 15px;
+    background: #f1f1f1;
+}
+
+#OpeningWP {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 0 0 10px 10px;
+    box-sizing:border-box;
+}
+
+#dataOpening-item {
+    border-bottom: 1px dashed grey;
+}
+#dataOpening-readmore{
+    height: 0;
+}
+#dataOpening-readmore a {
+    margin-left: 70%;
+    background: #be3b3b;
+    top: -2.4em;
+    color: white;
+    position: relative;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid #be3b3b;
+}
+
+    #dataOpening-readmore a:hover {
+        background: #50a8e5;
+        border: 1px solid #50a8e5;
+    }
+
+        #dataOpening-readmore a:hover:before {
+            border-right: 15px solid #50a8e5;
+        }
+
+    #dataOpening-readmore a:before {
+        content: "";
+        width: 0;
+        height: 0;
+        right: 100%;
+        top: 8px;
+        position: absolute;
+        border-top: 5px solid transparent;
+        border-right: 10px solid #be3b3b;
+        border-bottom: 5px solid transparent;
+    }
+
+.date {
+    display: flex;
+    color: #706c6c;
+    font-size: 15px;
+}
+
+#title {
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 12px;
+    margin-bottom: 5px;
+    border: 1px solid;
+    background: linear-gradient(#50a8e5, #3b5998);
+    font-weight: bold;
+}
+
+#jobDetail {
+    width: 80%;
+    background-image: url(/_layouts/15/img/background-jobdetail.jpg);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#title_Job {
+    border-bottom: 2px dashed black;
+}
+
+    #title_Job p {
+        font-size: 3.5em;
+        font-weight: bold;
+        color: black;
+        margin: 0;
+        width: 80%;
+        word-break: break-all;
+    }
+
+#editButton {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.editbutton {
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 10px;
+    background-image: linear-gradient(white, #ddd);
+    border: 1px solid #bbdcf3;
+}
+
+    .editbutton:hover {
+        background-image: linear-gradient(white, #cfc8c8);
+    }
+
+#shortDes {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#longDes {
+    font-size: 20px;
+}
+
+#contact {
+    margin-top: 2.5em;
+    display: flex;
+    padding-bottom: 4.5em;
+    border-bottom: 2px dashed black;
+}
+
+    #contact div {
+        margin-left: 5px;
+        padding: 5px 5px 8px 0;
+        font-size: 15px;
+        color: #0072c6;
+    }
+
+#bonus {
+    margin-top: 2.5em;
+    display: flex;
+}
+
+    #bonus div {
+        margin-left: 5px;
+        padding: 5px 5px 8px 0;
+        font-size: 15px;
+    }
+
+#divContainer {
+    border: 1px solid #06a1e7;
+    padding: 10px;
+    background-image: url(/_layouts/15/img/background-jobdetail.jpg);
+    width: 90%;
+    margin-bottom: 2em;
+    border-radius: 6px;
+}
+
+    #divContainer table {
+        width: 720px;
+    }
+
+        #divContainer table tr {
+            margin-bottom: 15px;
+        }
+
+.submitButton {
+    margin: 20px 0 10px 0;
+    width: 660px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.notification {
+    display: flex;
+    margin: 10px 0 10px 0;
+    width: 92%;
+    font-size: 15px;
+    color: black;
+    background: #ddd;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: 1px solid #06a1e7;
+    padding: 10px;
+}
+
+.margin {
+    margin: 10px 0 10px 0;
+}
+
+.auto-style1 {
+    font-size: 15px;
+    color: black;
+    width: 123px;
+}
+
+#status {
+    position: absolute;
+    left: 70%;
+    top: 117px;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 130px;
+    background-size: 130px 130px;
+    background-image: url(/_layouts/15/img/note.png);
+}
+
+.statusOpen {
+    color: #15a115;
+    font-family: Courier;
+    position: absolute;
+    font-size: 40px;
+    transform: rotate(25deg);
+    left: 20px;
+    top: 46px;
+    font-weight: bold;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.statusClose {
+    color: #d23;
+    font-family: Courier;
+    position: absolute;
+    font-size: 36px;
+    transform: rotate(25deg);
+    left: 13px;
+    top: 53px;
+    font-weight: bold;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}
+.save input{
+    width: 90px;
+    color: white;
+    font-size: 17px;
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+    background: linear-gradient(#50a8e5, #3b5998);
+}
+.save input:hover{
+    background: linear-gradient(#3b5998, #3b5998);
+    box-shadow: 2px 2px white;
+}
+.cancel input{
+    background: linear-gradient(#d23, #be3b3b);
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
+    width: 90px;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+}
+.cancel input:hover{
+    background: linear-gradient(#be3b3b, #be3b3b);
+    box-shadow: 2px 2px white;
+}
+#dataOpening-title{
+    width:45%;
+    white-space: nowrap;
+}
+#dataOpening-title h2{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

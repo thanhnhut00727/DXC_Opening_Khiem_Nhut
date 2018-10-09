@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" AlwaysForceInstall="TRUE" Id="9f8d513d-e1e3-4473-89cc-7fadf9f0843a" Scope="Site" Title="DXC_OpeningFinal Feature1">
+  <ElementManifests>
+    <ElementManifest Location="OpeningVacaniesWP\Elements.xml" />
+    <ElementFile Location="OpeningVacaniesWP\OpeningVacaniesWP.webpart" />
+  </ElementManifests>
+</Feature>

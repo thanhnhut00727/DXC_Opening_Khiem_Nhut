@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{9780976d-295a-4338-aaa3-b1eeb73c4b1c}"
+       Name="RefernalBonus"
+       DisplayName="Refernal Bonus"
+       Type="Number"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>
