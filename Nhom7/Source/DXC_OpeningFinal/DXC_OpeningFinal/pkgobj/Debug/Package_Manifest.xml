@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="7870a203-c34e-40c6-a059-b3e111320fb7" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="DXC_OpeningFinal.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="DXC_OpeningFinal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6ce3279edf1ab8cf" Namespace="DXC_OpeningFinal.OpeningVacaniesWP" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\DXC_OpeningFinal\OpeningVacaniesWP\OpeningVacaniesWPUserControl.ascx" />
+    <TemplateFile Location="Layouts\img\background-jobdetail.jpg" />
+    <TemplateFile Location="Layouts\img\error.png" />
+    <TemplateFile Location="Layouts\img\gift-icon.png" />
+    <TemplateFile Location="Layouts\img\hrcontact.png" />
+    <TemplateFile Location="Layouts\img\note.png" />
+    <TemplateFile Location="Layouts\img\time.png" />
+    <TemplateFile Location="Layouts\page\AddNewJob.aspx" />
+    <TemplateFile Location="Layouts\page\AllJobs.aspx" />
+    <TemplateFile Location="Layouts\page\JobDetail.aspx" />
+    <TemplateFile Location="Layouts\page\UpdateJob.aspx" />
+    <TemplateFile Location="Layouts\Style\CSS.css" />
+    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_UpdateJob.ascx" />
+    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_AllJob.ascx" />
+    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_AddNewJob.ascx" />
+    <TemplateFile Location="ControlTemplates\DXC_OpeningFinal\Control_JobDetail.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="DXC_OpeningFinal_Feature1\Feature.xml" />
+    <FeatureManifest Location="DXC_OpeningFinal_Feature2\Feature.xml" />
+  </FeatureManifests>
+</Solution>

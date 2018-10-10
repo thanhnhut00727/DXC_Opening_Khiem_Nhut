@@ -1,0 +1,1 @@
+http://win-ikp5n1jcalv:9999/_layouts/closeConnection.aspx?loginasanotheruser=true

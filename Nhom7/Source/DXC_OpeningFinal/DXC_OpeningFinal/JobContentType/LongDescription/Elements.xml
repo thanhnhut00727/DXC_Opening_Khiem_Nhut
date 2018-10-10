@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{509947e5-427f-4238-bca2-a17046518e59}"
+       Name="LongDescription"
+       DisplayName="Long Description"
+       Type="Note"
+       Required="FALSE"
+       MaxLength="500"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>
